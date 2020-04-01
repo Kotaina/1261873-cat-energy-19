@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Подбор программы</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+ rel="stylesheet">
+</head>
+<header class="header">
+  <div>
+    <img src="#" alt="Cat-energy-logo">
+  </div>
+  <h1>Cat energy</h1>
+  <a href="#"><span class="visually-hidden header--menu">Меню</span></a>
+  <ul class="header--list visually-hidden">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="./catalog.html"></a></li>
+    <li>Подбор программы</li>
+  </ul>
+</header>
+<h1>Подбор программы</h1>
+<p>Заполните анкету и мы подберём программу питания для вашего кота</p>
+<section class="user-form" >
+<form action="https://echo.htmlacademy.ru" class="cat">
+  <legend class="visually-hidden">Анкета</legend>
+  <ul class="main">
+  <li class="user-form--name">
+    <label for="name">Имя:*</label>
+    <input type="text" name="name" id="name" placeholder="Барсик" required>
+  </li>
+  <li class="user-form--weight">
+    <label for="weight">Вес (кг):*</label>
+    <input type="text" name="weight " id="weight" placeholder="7" required>
+  </li>
+  <li class="user-form--age">
+    <label for="age">Возраст (лет):*</label>
+    <input type="text" name="age" id="weight" placeholder="7">
+  </li>
+  </ul>
+  <ul class="target">
+    <li>
+      <label for="loose-weight" class="target">
+        <input id="loose-weight" type="radio" name="loose-weight" value="loose-weight" />
+        Похудение
+      </label>
+    </li>
+    <label for="gain-weight" class="target">
+      <input id="gain-weight" type="radio" name="loose-weight" value="gain-weight" />
+      Набор массы
+    </label>
+    <label for="idk" class="target">
+      <input id="idk" type="radio" name="loose-weight" value="idk" />
+      Не знаю (нужен ваш совет)
+    </label>
+</ul>
+</form>
+<form action="https://echo.htmlacademy.ru" class="contacts">
+  <legend>Контактные данные (владельца кота)</legend>
+  <div class="name">
+    <label for="e-mail">E-mail:*</label>
+    <input type="text" id="e-mail" required placeholder="kuklachev@gmail.com">
+  </div>
+  <div>
+    <label for="tel">Телефон:*</label>
+    <input type="text" id="tel" required placeholder="8 (960) 900-60-90">
+  </div>
+</form>
+<textarea class="" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота">
+</textarea>
+<form action="https://echo.htmlacademy.ru" class="additional-info">
+  <legend>Дополнительно</legend>
+  <label for="sugarfree">
+    <input type="checkbox" id="sugarfree" value="sugarfree">
+    Сахарозаменитель
+  </label>
+  <label for="water">
+    <input type="checkbox" id="water" value="water">
+    Питьевая вода
+  </label>
+  <label for="Milk">
+    <input type="checkbox" id="Milk" value="Milk">
+    Молоко
+  </label>
+  <label for="Vitamins">
+    <input type="checkbox" id="Vitamins" value="Vitamins">
+    Витамины
+  </label>
+</form>
+<button type="button button__green">Отправить заявку</button>
+<span>* - обязательные поля</span>
+</section>
+<footer class="footer">
+  <aside class="footer--dealers">
+    <h2>Пригашаем к сотрудничеству дилеров!</h2>
+    <p class="dealers--adress">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</p>
+  </aside>
+  <section class="footer--map">
+
+  </section>
+  <p class="footer--logo"><span>Cat</span>energy</p>
+  <ul class="footer--social social">
+    <li class="social--item">
+      <a href="vk.com" class="social--item vk">
+        <span class="visually-hidden">Вконтакте</span>
+      </a>
+    </li>
+    <li class="social--item">
+      <a href="instagram.com" class="social--item inst">
+        <span class="visually-hidden">Инстаграмм</span>
+      </a>
+    </li>
+    <li class="social--item">
+      <a href="fb.com" class="social--item fb">
+        <span class="visually-hidden">Фейсбук</span>
+      </a>
+    </li>
+  </ul>
+  <div class="html-site">
+    <span>HTML Academy</span>
+    <img src="#" alt="html-academy-logo">
+  </div>
+</footer>
+
+</html>
