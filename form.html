@@ -23,9 +23,9 @@
 <section class="user-form">
   <h1 class="user-form__title">Подбор программы</h1>
   <p class="user-form__text">Заполните анкету и мы подберём программу питания для вашего кота</p>
-  <form class="user-form__input cat" action="https://echo.htmlacademy.ru">
+  <form class="user-form__input" action="https://echo.htmlacademy.ru">
     <legend class="visually-hidden">Анкета</legend>
-    <ul class="cat__main cat-info">
+    <ul class="user-form__main">
       <li class="cat-info__name">
         <label for="name">Имя:*</label>
         <input type="text" name="name" id="name" placeholder="Барсик" required>
@@ -39,67 +39,76 @@
         <input type="text" name="age" id="weight" placeholder="7">
       </li>
     </ul>
-    <ul class="cat_main target">
-      <li class="target__1">
-        <label for="loose-weight" class="target">
+    <ul class="user-form__target">
+      <li class="target__loose">
+        <label class="target" for="loose-weight">
           <input id="loose-weight" type="radio" name="loose-weight" value="loose-weight" />
           Похудение
         </label>
       </li>
-      <li class="target__2">
-        <label for="gain-weight" class="target">
+      <li class="target__gain">
+        <label class="target" for="gain-weight">
           <input id="gain-weight" type="radio" name="loose-weight" value="gain-weight" />
           Набор массы
         </label>
       </li>
-      <li class="target__3">
-        <label for="idk" class="target">
+      <li class="target__idk">
+        <label class="target" for="idk">
           <input id="idk" type="radio" name="loose-weight" value="idk" />
           Не знаю (нужен ваш совет)
         </label>
       </li>
     </ul>
-  </form>
-  <div class="user-form__owner owner">
-    <h3 class="owner__title">Контактные данные (владельца кота)</h3>
-    <form class="owner__contacts contact" action="https://echo.htmlacademy.ru">
-      <div class="contact__name">
-        <label for="e-mail">E-mail:*</label>
-        <input type="text" id="e-mail" required placeholder="kuklachev@gmail.com">
+    <div class="user-form__owner">
+      <h3 class="owner__title">Контактные данные (владельца кота)</h3>
+      <div class="owner__contacts contact">
+        <div class="contact__name">
+          <label for="e-mail">E-mail:*</label>
+          <input type="text" id="e-mail" required placeholder="kuklachev@gmail.com">
+        </div>
+        <div class="contact__phone">
+          <label for="tel">Телефон:*</label>
+          <input type="text" id="tel" required placeholder="8 (960) 900-60-90">
+        </div>
       </div>
-      <div class="contact__phone">
-        <label for="tel">Телефон:*</label>
-        <input type="text" id="tel" required placeholder="8 (960) 900-60-90">
-      </div>
-    </form>
-  </div>
-  <div class="user-form__comment">
-    <textarea class="" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота">
+    </div>
+    <div class="user-form__comment">
+      <textarea class="" name="comment" id="comment" cols="30" rows="10"
+        placeholder="Расскажите обо всех повадках кота">
     </textarea>
-  </div>
-  <div class="user-form__additional add">
-    <h3 class="add__title">Дополнительно</h3>
-    <form class="add__info component" action="https://echo.htmlacademy.ru">
-      <label for="component--sugarfree">
-        <input type="checkbox" id="sugarfree" value="sugarfree">
-        Сахарозаменитель
-      </label>
-      <label for="component--water">
-        <input type="checkbox" id="water" value="water">
-        Питьевая вода
-      </label>
-      <label for="component--milk">
-        <input type="checkbox" id="Milk" value="Milk">
-        Молоко
-      </label>
-      <label for="component--vitamins">
-        <input type="checkbox" id="Vitamins" value="Vitamins">
-        Витамины
-      </label>
-    </form>
-  </div>
-  <button type="user-form__button button--green">Отправить заявку</button>
-  <span>* - обязательные поля</span>
+    </div>
+    <div class="user-form__additional">
+      <h3 class="add__title">Дополнительно</h3>
+      <ul class="additional-components">
+        <li class="component">
+          <label for="sugarfree">
+            <input type="checkbox" id="sugarfree" value="sugarfree">
+            Сахарозаменитель
+          </label>
+        </li>
+        <li class="component">
+          <label for="water">
+            <input type="checkbox" id="water" value="water">
+            Питьевая вода
+          </label>
+        </li>
+        <li class="component">
+          <label for="milk">
+            <input type="checkbox" id="Milk" value="milk">
+            Молоко
+          </label>
+        </li>
+        <li class="component">
+          <label for="vitamins">
+            <input type="checkbox" id="vitamins" value="vitamins">
+            Витамины
+          </label>
+        </li>
+      </ul>
+    </div>
+    <button type="submit" class="user-form__button button button--green">Отправить заявку</button>
+    <span>* - обязательные поля</span>
+  </form>
 </section>
 <section class="geo">
   <div class="geo__dealers dealers-info">
@@ -108,6 +117,7 @@
   </div>
   <div class="geo__map"></div>
 </section>
+
 <footer class="footer">
   <a class="footer__logo logo">
     <img src="#" alt="footer-logo">
