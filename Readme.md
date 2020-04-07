@@ -1,11 +1,15 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Довгенко](https://up.htmlacademy.ru/adaptive/19/user/1261873).
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 * Наставник: `Неизвестно`.
 =======
 * Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora) .
 >>>>>>> Stashed changes
+=======
+* Наставник: [`Владислав Кривокора`](https://htmlacademy.ru/profile/krivokora) .
+>>>>>>> master
 
 ---
 
