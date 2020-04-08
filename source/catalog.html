@@ -3,18 +3,19 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Каталог продукции</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+  <title>Магазин Cat energy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <header class="header">
-  <a class="header__logo logo">
-    <img src="#" alt="Cat-energy-logo">
+  <a class="header__logo logo" href="index.html">
+    <img src="./img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
   </a>
   <a href="#" class="header__link-menu">
     <span class="visually-hidden">Меню</span>
   </a>
-  <ul class="header__menu menu menu--hide">
+  <ul class="header__menu menu menu--hide visually-hidden">
     <li class="menu__item">Главная</li>
     <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
     <li class="menu__item"><a href="form.html" class="menu__link">Подбор программы </a></li>
@@ -24,23 +25,26 @@
   <h2 class="catalog__title">Каталог продукции</h2>
   <ul class="catalog__list">
     <li class="catalog__product product">
-      <h3 class="product__title">Cat energy pro 500 г</h3>
-      <div class="product__info main-info">
-        <img class="main-info__image" src="#" alt="cat-energy-500">
-        <table class="main-info__description row">
-          <tr class="row-v">
-            <td>Объём</td>
-            <td>500 г</td>
-          </tr>
-          <tr class="row-taste">
-            <td>Вкус</td>
-            <td>Курица</td>
-          </tr>
-          <tr class="row-price">
-            <td>Цена</td>
-            <td>700 р.</td>
-          </tr>
-        </table>
+      <div class="product__card">
+        <img class="product__image" src="./img/chicken-small-mobile@1x.jpg" width="140" height="144"
+          alt="cat-energy-500">
+        <div class="product__info main-info">
+          <h3 class="main-info__title">Cat energy pro 500 г</h3>
+          <table class="main-info__description row">
+            <tr class="row-v">
+              <td class="col-one">Объём</td>
+              <td class="col-two">500 г</td>
+            </tr>
+            <tr class="row-taste">
+              <td class="col-one">Вкус</td>
+              <td class="col-two">Курица</td>
+            </tr>
+            <tr class="row-price">
+              <td class="col-one">Цена</td>
+              <td class="col-two">700 р.</td>
+            </tr>
+          </table>
+        </div>
       </div>
       <a class="product__button button button--green" href="#">Заказать</a>
     </li>
@@ -223,12 +227,17 @@
     <h2 class="dealers-info__title">Пригашаем к сотрудничеству дилеров!</h2>
     <address class="dealers-info__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</address>
   </div>
-  <div class="geo__map"></div>
+  <div class="geo__map">
+    <iframe src="https://yandex.ru/map-widget/v1/-/CKvWfD9r" width="318" height="362" frameborder="1"
+      allowfullscreen="true" style="position:relative;"></iframe>
+  </div>
 </section>
 <footer class="footer">
-  <a class="footer__logo logo">
-    <img src="#" alt="footer-logo">
-  </a>
+  <div class="footer__logo logo">
+    <a href="#">
+      <img src="./img/logo-footer.svg" width="128" height="24" alt="footer-logo">
+    </a>
+  </div>
   <ul class="footer__social social">
     <li class="social__item">
       <a class="social__item social__item--vk" href="vk.com">
@@ -248,7 +257,7 @@
   </ul>
   <div class="footer__html-academy brand">
     <span class="brand__text">HTML Academy</span>
-    <img class="brand__image" src="#" alt="html-academy-logo">
+    <img class="brand__image" src="./img/htmlacademy.svg" width="35" height="47" alt="html-academy-logo">
   </div>
 </footer>
 
