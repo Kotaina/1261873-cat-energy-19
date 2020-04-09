@@ -1,11 +1,18 @@
 .catalog {
+
+  width: 320px;
+
   &__title {
     margin: 0;
-    margin-left: 22px;
+    // margin-left: 19px;
     padding-top: 15px;
+    padding-left: 19px;
+    margin-bottom: 29px;
     font-size: 36px;
     font-weight: normal;
     line-height: 1.67;
+    letter-spacing: 0.9;
+    border-top: 1px solid gray;
   }
 
   &__list {
@@ -16,22 +23,24 @@
 }
 
 .product {
-  width: 320px;
+  box-sizing: border-box;
+  width: 318px;
   min-height: 210px;
-  padding: 25px 20px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  // padding: 25px 20px;
+  padding: 0 20px 15px 20px;
+  border-top: 1px solid #444444;
+  border-bottom: 1px solid #444444;
   // display: flex;
   // justify-content: space-between;
 
   & h3 {
-    max-width: 74px;
+    max-width: 97px;
     font-size: 16px;
     line-height: 20px;
     margin: 0;
     margin-bottom: 9px;
-    margin-top: 25px;
-    margin-right: 69px;
+    margin-top: 20px;
+    margin-right: 45px;
     text-transform: uppercase;
     font-weight: normal;
   }
@@ -56,16 +65,51 @@
   color: #444444;
 
   &__description {
-    border-spacing: 69px 0;
+    width: auto;
+    box-sizing: border-box;
+    border-spacing: 23px 0;
     text-align: left;
-
-    & td {
-      width: 30px;
-    }
+    // margin-right: 10px;
+    margin-bottom: 21px;
   }
 }
 
-.col-one,
-.col-two {
-  width: 30px;
+.more-card {
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 210px;
+  padding: 0 20px;
+  padding-top: 81px;
+  border-bottom: 1px solid #444444;
+
+  &__title {
+    position: relative;
+    margin: 0;
+    // margin-top: 81px;
+    margin-bottom: 6px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::after {
+      content: url("../img/icon-plus-mobile.svg");
+      width: 31px;
+      height: 31px;
+      position: absolute;
+      bottom: 43px;
+      right: 45%;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 23px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #444444;
+  }
 }
