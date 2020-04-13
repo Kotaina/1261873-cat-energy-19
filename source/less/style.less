@@ -7,11 +7,20 @@
 
 
 // Blocks
-@import "blocks/";
+
+// Header
+@import "blocks/header.less";
+@import "blocks/header__link-menu.less";
+@import "blocks/header__logo.less";
+@import "blocks/menu--hide.less";
+@import "blocks/menu__item.less";
+
+
+
 
 
 // Index
-@import "header.less";
+// @import "header.less";
 @import "set-program.less";
 @import "promo.less";
 @import "how-it-works.less";
@@ -23,52 +32,3 @@
 @import "catalog.less";
 @import "also.less";
 @import "gift.less";
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-body {
-  max-width: 320px;
-  margin: 0 auto;
-  // background-color: gray;
-  font-family: "Oswald", sans-serif;
-  background-color: white;
-}
-
-.visually-hidden {
-  display: none;
-}
-
-.button {
-  display: inline-block;
-  box-sizing: border-box;
-  padding-top: 10px;
-  vertical-align: center;
-  width: 280px;
-  height: 40px;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.29;
-  background-color: #68b738;
-
-  &--gray {
-    background-color: #f2f2f2;
-    color: black;
-  }
-}
