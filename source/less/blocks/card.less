@@ -1,0 +1,31 @@
+.card {
+  position: relative;
+  padding: 30px 36px 0 21px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  box-sizing: border-box;
+  height: 266px;
+  width: 280px;
+  background-color: #f2f2f2b4;
+
+  &--loose-weight {
+    &::after {
+      content: url("../img/icon-cat-slim.svg");
+      position: absolute;
+      width: 35px;
+      height: 49px;
+    }
+ }
+ &::after { // Позиционируется относительно карточки, а не ссылки
+  content: url("../img/icon-right-arrow-verylong.svg");
+  position: absolute;
+  bottom: 32px;
+  margin-left: 12px;
+  // top: -3px;
+  // right: -33px;
+  width: 25px;
+  height: 12px;
+  z-index: 6;
+}
+
+}
