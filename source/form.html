@@ -15,13 +15,13 @@
   <a href="#" class="header__link-menu">
     <span class="visually-hidden">Меню</span>
   </a>
-  <ul class="header__menu menu menu--hide">
+  <ul class="header__menu menu menu--hide visually-hidden">
     <li class="menu__item">Главная</li>
     <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
     <li class="menu__item"><a href="form.html" class="menu__link">Подбор программы </a></li>
   </ul>
 </header>
-<section class="user-form">
+<section class="user-form container">
   <h1 class="user-form__title">Подбор программы</h1>
   <p class="user-form__text">Заполните анкету и мы подберём программу питания для вашего кота</p>
   <form class="user-form__input" action="https://echo.htmlacademy.ru">
@@ -62,43 +62,45 @@
     </ul>
     <div class="user-form__owner owner">
       <h3 class="owner__title">Контактные данные (владельца кота)</h3>
-      <div class="owner__contacts contact">
-        <div class="contact__name">
+      <ul class="owner__contacts">
+        <li class="owner__name">
           <label for="e-mail">E-mail:*</label>
           <input type="text" id="e-mail" required placeholder="kuklachev@gmail.com">
-        </div>
-        <div class="contact__phone">
+        </li>
+        <li class="owner__phone">
           <label for="tel">Телефон:*</label>
           <input type="text" id="tel" required placeholder="8 (960) 900-60-90">
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-    <div class="user-form__comment">
-      <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота">
+    <div class="user-form__comment comment">
+      <h3 class="comment__title">Комментарий</h3>
+      <textarea class="comment__text" name="comment" id="comment" cols="30" rows="5"
+        placeholder="Расскажите обо всех повадках кота">
     </textarea>
     </div>
     <div class="user-form__additional additional">
       <h3 class="additional__title">Дополнительно</h3>
       <ul class="additional__components">
-        <li class="component">
+        <li class="additional__component">
           <label for="sugarfree">
             <input type="checkbox" id="sugarfree" value="sugarfree">
             Сахарозаменитель
           </label>
         </li>
-        <li class="component">
+        <li class="additional__component">
           <label for="water">
             <input type="checkbox" id="water" value="water">
             Питьевая вода
           </label>
         </li>
-        <li class="component">
+        <li class="additional__component">
           <label for="milk">
             <input type="checkbox" id="milk" value="milk">
             Молоко
           </label>
         </li>
-        <li class="component">
+        <li class="additional__component">
           <label for="vitamins">
             <input type="checkbox" id="vitamins" value="vitamins">
             Витамины
@@ -107,7 +109,7 @@
       </ul>
     </div>
     <button class="user-form__button button" type="submit">Отправить заявку</button>
-    <span>* - обязательные поля</span>
+    <span class="require">* - Обязательные поля</span>
   </form>
 </section>
 <section class="geo">
