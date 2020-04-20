@@ -6,3 +6,26 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
+
+.gift__text {
+  position: relative;
+  top: 190px;
+  left: 60px;
+  margin: 0;
+  width: 159px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+
+  &::after {
+    content: url("../img/icon-gift.svg");
+    width: 56px;
+    height: 61px;
+    position: absolute;
+    bottom: 117px;
+    right: 32%;
+  }
+}
