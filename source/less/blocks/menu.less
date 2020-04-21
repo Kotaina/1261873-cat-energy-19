@@ -2,6 +2,7 @@
   display: inline-block;
   vertical-align: center;
   box-sizing: border-box;
+  margin-left: -20px;
   height: 65px;
   text-align: center;
   // padding-top: 23px;
@@ -14,9 +15,11 @@
   letter-spacing: normal;
 
   &:first-child {
+    display: block;
     min-width: 320px;
     min-height: 65px;
     padding-top: 23px;
+    text-align: center;
   }
 
   &:last-child {
@@ -35,7 +38,27 @@
   }
 }
 
+@media @tablet-width {
+  .menu__item,
+  .menu__item:first-child,
+  .menu__item:last-child,
+  .menu__item a {
+    .list-reset();
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: inline;
+    border: none;
+  }
+}
+
+.menu-item a {
+  @media @tablet-width {
+    margin-left: 32px;
+  }
+}
+
 .menu--hide {
-  margin: 0;
-  padding: 0;
+  .list-reset();
 }
