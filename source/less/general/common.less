@@ -8,6 +8,10 @@ body {
   // background-color: gray;
   font-family: "Oswald", sans-serif;
   background-color: white;
+
+  @media @tablet-width {
+    min-width: 768px;
+  }
 }
 
 .button {
@@ -24,6 +28,13 @@ body {
   font-size: 14px;
   line-height: 1.29;
   background-color: @green;
+
+  @media @tablet-width {
+    width: 249px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   &--gray {
     background-color: #f2f2f2;
