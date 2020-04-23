@@ -1,5 +1,18 @@
 .promo {
   margin-bottom: 44px;
+
+  @media @desktop-width {
+    margin-bottom: 74px;
+  }
+}
+
+.promo .container {
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+    // .list-reset();
+  }
+
 }
 
 .card {
@@ -13,10 +26,15 @@
   background-color: #f2f2f2b4;
 
   @media @tablet-width {
-    padding: 76px 62px 62px 45px;
+    padding: 76px 62px 62px 52px;
     // width: 708px;
     min-height: 372px;
     margin-bottom: 30px;
+  }
+
+  @media @desktop-width {
+    width: 570px;
+    margin: 0;
   }
 
   &--loose-weight {
@@ -30,10 +48,18 @@
 
       @media @tablet-width {
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 78px;
+        left: 475px;
         width: 141px;
         height: 194px;
+      }
+
+      @media @desktop-width {
+        position: absolute;
+        top: 42px;
+        left: 65px;
+        width: 71px;
+        height: 97px;
       }
     }
 
@@ -50,10 +76,17 @@
 
       @media @tablet-width {
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 91px;
+        left: 445px;
         width: 200px;
         height: 200px;
+      }
+
+      @media @desktop-width {
+        top: 48px;
+        left: 53px;
+        width: 100px;
+        height: 100px;
       }
     }
   }
@@ -69,10 +102,17 @@
 
       @media @tablet-width {
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 133px;
+        left: 412px;
         width: 268px;
         height: 113px;
+      }
+
+      @media @desktop-width {
+        top: 71px;
+        left: 34px;
+        width: 134px;
+        height: 57px;
       }
     }
 
@@ -89,10 +129,17 @@
 
       @media @tablet-width {
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 91px;
+        left: 445px;
         width: 200px;
         height: 200px;
+      }
+
+      @media @desktop-width {
+        top: 48px;
+        left: 53px;
+        width: 100px;
+        height: 100px;
       }
     }
   }
@@ -117,6 +164,11 @@
     line-height: 37px;
     margin-bottom: 23px;
   }
+
+  @media @desktop-width {
+    margin-left: 162px;
+    margin-bottom: 75px;
+  }
 }
 
 .card__text {
@@ -136,6 +188,10 @@
     line-height: 24px;
     border: none;
     margin-bottom: 37px;
+  }
+
+  @media @desktop-width {
+    width: 462px;
   }
 }
 
@@ -168,5 +224,9 @@
   @media @tablet-width {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media @desktop-width {
+    margin: 0;
   }
 }
