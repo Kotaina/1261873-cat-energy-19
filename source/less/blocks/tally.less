@@ -1,5 +1,26 @@
 .tally {
   min-height: 112px;
   // border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid @border-color;
+  width: 100%;
+  // margin-left: -20px;
+  // padding-left: 20px;
+}
+
+.tally__title {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.tally__char {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1;
+  color: @grey;
+  width:280px ;
 }

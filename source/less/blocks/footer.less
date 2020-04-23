@@ -1,6 +1,32 @@
-.footer {
-  // width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+.footer .container {
   background-color: #f2f2f2;
+
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media @desktop-width {
+    width: 100%;
+    min-height: 150px;
+    align-items: center;
+    padding: 0 110px;
+  }
+}
+
+.footer__logo {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  left: 27%;
+  // margin: 0 auto;
+  // padding-top: 29px;
+  box-sizing: border-box;
+  height: 86px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media @tablet-width {
+    border: none;
+    left: 0;
+  }
 }

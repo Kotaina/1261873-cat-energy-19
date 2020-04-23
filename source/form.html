@@ -3,23 +3,26 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Магазин Cat energy</title>
   <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet"> -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <header class="header">
-  <a class="header__logo logo" href="index.html">
-    <img src="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
-  </a>
-  <a href="#" class="header__link-menu">
-    <span class="visually-hidden">Меню</span>
-  </a>
-  <ul class="header__menu menu menu--hide visually-hidden">
-    <li class="menu__item">Главная</li>
-    <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
-    <li class="menu__item"><a href="form.html" class="menu__link">Подбор программы </a></li>
-  </ul>
+  <div class="container">
+    <a class="logo header__logo">
+      <img src="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
+    </a>
+    <a href="#" class="header__link-menu">
+      <span class="visually-hidden">Меню</span>
+    </a>
+    <ul class="header__menu menu menu--hide">
+      <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+      <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
+      <li class="menu__item active">Подбор программы</li>
+    </ul>
+  </div>
 </header>
 <section class="user-form container">
   <h1 class="user-form__title">Подбор программы</h1>
@@ -113,40 +116,44 @@
   </form>
 </section>
 <section class="geo">
-  <div class="geo__dealers dealers-info">
-    <h2 class="dealers-info__title">Пригашаем к сотрудничеству дилеров!</h2>
-    <address class="dealers-info__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</address>
-  </div>
-  <div class="geo__map">
-    <iframe src="https://yandex.ru/map-widget/v1/-/CKvWfD9r" width="318" height="362"
-      style="position:relative;"></iframe>
+  <div class="container">
+    <div class="geo__dealers dealers-info">
+      <h2 class="dealers-info__title">Пригашаем к сотрудничеству дилеров!</h2>
+      <address class="dealers-info__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</address>
+    </div>
+    <div class="geo__map">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CKvWfD9r" width="318" height="362"
+        style="position:relative;"></iframe>
+    </div>
   </div>
 </section>
 
 <footer class="footer">
-  <a href="#">
-    <img class="footer__logo logo" src="img/logo-footer.svg" width="128" height="24" alt="footer-logo">
-  </a>
-  <ul class="footer__social social">
-    <li class="social__item">
-      <a class="social__link social__item--vk" href="vk.com">
-        <span class="visually-hidden">Вконтакте</span>
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__item--inst" href="instagram.com">
-        <span class="visually-hidden">Инстаграмм</span>
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__item--fb" href="fb.com">
-        <span class="visually-hidden">Фейсбук</span>
-      </a>
-    </li>
-  </ul>
-  <div class="footer__html-academy brand">
-    <span class="brand__text">HTML Academy</span>
-    <img class="brand__image" src="img/htmlacademy.svg" width="35" height="47" alt="html-academy-logo">
+  <div class="container">
+    <a href="#">
+      <img class="footer__logo logo" src="img/logo-footer.svg" width="128" height="24" alt="footer-logo">
+    </a>
+    <ul class="footer__social social">
+      <li class="social__item">
+        <a class="social__link social__item--vk" href="vk.com">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__item--inst" href="instagram.com">
+          <span class="visually-hidden">Инстаграмм</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__item--fb" href="fb.com">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__html-academy brand">
+      <span class="brand__text">HTML Academy</span>
+      <img class="brand__image" src="img/htmlacademy.svg" width="35" height="47" alt="html-academy-logo">
+    </div>
   </div>
 </footer>
 

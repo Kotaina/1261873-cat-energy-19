@@ -1,14 +1,30 @@
 .set-program {
+  // width: 320px;
   position: relative;
   box-sizing: border-box;
   text-align: center;
   min-height: 481px;
   margin-bottom: 22px;
-  padding: 29px 20px 0 20px;
+  // padding: 29px 20px 0 20px;
+  padding-top: 29px;
   color: white;
 
-  // background-color: white;
+  @media @tablet-width {
+    // width: 768px;
+    // width: 100%;
+    min-height: 845px;
+    padding-top: 56px;
+    padding-left: 87px;
+  }
 
+  @media @desktop-width {
+    width: 100%;
+    min-height: 578px;
+    padding-top: 106px;
+    padding-left: 151px;
+    margin-bottom: 80px;
+  }
+// Фон
   &::before {
     content: url("../img/index-background-mobile@1x.jpg");
     position: absolute;
@@ -18,8 +34,21 @@
     width: 100%;
     height: 305px;
     z-index: -1;
-  }
 
+    @media @tablet-width {
+      content: none;
+    }
+
+    @media @desktop-width {
+      content: url("../img/index-background-desktop@1x.jpg");
+      position: absolute;
+      top: -117px;
+      left: 718px;
+      width: 720px;
+      height: 696px;
+    }
+  }
+// Банка
   &::after {
     content: url("../img/index-can-mobile@1x.png");
     position: absolute;
@@ -27,5 +56,80 @@
     left: 20px;
     width: 280px;
     height: 270px;
+
+    @media @tablet-width {
+      content: url("/source/img/index-can-tablet@1x.jpg");
+      position: absolute;
+      top: 258px;
+      left: 27px;
+      // width: 709px;
+      height: 609px;
+      z-index: -1;
+    }
+
+    @media @desktop-width {
+      content: url("../img/index-can-desktop@1x.png");
+      position: absolute;
+      top: 27px;
+      left: 561px;
+      width: 552px;
+      height: 499px;
+      z-index: -1;
+    }
+  }
+}
+
+.set-program__title {
+  margin: 0;
+  margin-bottom: 21px;
+  // text-transform: uppercase;
+  font-size: 36px;
+  // letter-spacing: 1px;
+  font-weight: normal;
+  line-height: 1;
+
+  @media @tablet-width {
+    width: 414px;
+    color: black;
+    font-size: 60px;
+    text-align: left;
+    // margin-left: 97px;
+    margin-bottom: 40px;
+  }
+}
+
+.set-program__subtitle {
+  margin: 0;
+  margin-bottom: 302px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @media @tablet-width {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    // margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 46px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 51px;
+  }
+}
+
+.set-program__button {
+  @media @tablet-width {
+    position: absolute;
+    left: 118px;
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 15px;
+  }
+
+  @media @desktop-width {
+    left: 189px;
   }
 }

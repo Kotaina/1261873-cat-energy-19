@@ -1,17 +1,92 @@
 .more-card {
+  position: relative;
   box-sizing: border-box;
+  margin-left: -20px;
   width: 320px;
-  min-height: 210px;
+  min-height: 208px;
   padding: 0 20px;
-  padding-top: 81px;
-  border-bottom: 1px solid #444444;
+  padding-top: 78px;
+  border-top: 1px solid @border-color;
+  align-items: center;
 
   &::after {
     content: url("../img/icon-plus-mobile.svg");
     width: 31px;
     height: 31px;
     position: absolute;
-    bottom: 43px;
+    top: 25px;
     right: 45%;
+
+    @media @tablet-width {
+      width: 61px;
+      height: 61px;
+    }
   }
+
+  @media @tablet-width {
+    // .list-reset();
+    width: 324px;
+    height: 432px;
+    padding-top: 163px;
+    padding: 163px 36px 10px 36px;
+    border: 1px solid @border-color;
+  }
+
+  @media @desktop-width {
+    width: 245px;
+  }
+}
+
+.more-card__title {
+  position: relative;
+  margin: 0;
+  // margin-top: 81px;
+  margin-bottom: 7px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 135px;
+    margin-left: 64px;
+    margin-bottom: 28px;
+  }
+
+  @media @desktop-width {
+    // margin: 0 auto;
+    margin-left: 18px;
+    // margin-bottom: 28px;
+  }
+}
+
+.more-card__text {
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: @grey;
+  font-family: Arial, sans-serif;
+
+  @media @tablet-width {
+    font-size: 16px;
+    line-height: 16px;
+    max-width: 167px;
+    margin-left: 51px;
+    margin-bottom: 89px;
+  }
+
+  @media @desktop-width {
+    margin-left: 0;
+  }
+}
+
+.more-card .button {
+  width: 169px;
 }

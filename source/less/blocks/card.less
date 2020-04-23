@@ -1,3 +1,20 @@
+.promo {
+  margin-bottom: 44px;
+
+  @media @desktop-width {
+    margin-bottom: 74px;
+  }
+}
+
+.promo .container {
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+    // .list-reset();
+  }
+
+}
+
 .card {
   position: relative;
   padding: 30px 36px 0 21px;
@@ -5,27 +22,211 @@
   margin-bottom: 17px;
   box-sizing: border-box;
   height: 266px;
-  width: 280px;
+  // width: 280px;
   background-color: #f2f2f2b4;
+
+  @media @tablet-width {
+    padding: 76px 62px 62px 52px;
+    // width: 708px;
+    min-height: 372px;
+    margin-bottom: 30px;
+  }
+
+  @media @desktop-width {
+    width: 570px;
+    margin: 0;
+  }
 
   &--loose-weight {
     &::after {
       content: url("../img/icon-cat-slim.svg");
       position: absolute;
+      top: 23px;
+      left: 30px;
       width: 35px;
       height: 49px;
+
+      @media @tablet-width {
+        position: absolute;
+        top: 78px;
+        left: 475px;
+        width: 141px;
+        height: 194px;
+      }
+
+      @media @desktop-width {
+        position: absolute;
+        top: 42px;
+        left: 65px;
+        width: 71px;
+        height: 97px;
+      }
     }
- }
- &::after { // Позиционируется относительно карточки, а не ссылки
-  content: url("../img/icon-right-arrow-verylong.svg");
-  position: absolute;
-  bottom: 32px;
-  margin-left: 12px;
-  // top: -3px;
-  // right: -33px;
-  width: 25px;
-  height: 12px;
-  z-index: 6;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 25px;
+      left: 21px;
+      background-color: #68b738;
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+      // z-index: 1;
+
+      @media @tablet-width {
+        position: absolute;
+        top: 91px;
+        left: 445px;
+        width: 200px;
+        height: 200px;
+      }
+
+      @media @desktop-width {
+        top: 48px;
+        left: 53px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  &--gain-weight {
+    &::after {
+      content: url("../img/icon-cat-pro.svg");
+      position: absolute;
+      top: 38px;
+      left: 12px;
+      width: 67px;
+      height: 28px;
+
+      @media @tablet-width {
+        position: absolute;
+        top: 133px;
+        left: 412px;
+        width: 268px;
+        height: 113px;
+      }
+
+      @media @desktop-width {
+        top: 71px;
+        left: 34px;
+        width: 134px;
+        height: 57px;
+      }
+    }
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 28px;
+      left: 21px;
+      background-color: #68b738;
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+      // z-index: 1;
+
+      @media @tablet-width {
+        position: absolute;
+        top: 91px;
+        left: 445px;
+        width: 200px;
+        height: 200px;
+      }
+
+      @media @desktop-width {
+        top: 48px;
+        left: 53px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
 }
 
+.card__title {
+  margin: 0 auto;
+  // margin-left: 27px;
+  margin-left: 54px;
+  margin-bottom: 26px;
+  width: auto;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.54;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media @tablet-width {
+    .list-reset();
+    text-align: left;
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 23px;
+  }
+
+  @media @desktop-width {
+    margin-left: 162px;
+    margin-bottom: 75px;
+  }
+}
+
+.card__text {
+  margin: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #444444;
+  letter-spacing: 1px;
+
+  @media @tablet-width {
+    padding: 0;
+    width: 371px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 37px;
+  }
+
+  @media @desktop-width {
+    width: 462px;
+  }
+}
+
+.card__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after { // Позиционируется относительно карточки, а не ссылки
+    content: url("../img/icon-right-arrow-verylong.svg");
+    position: absolute;
+    // bottom: 8px;
+    // bottom: 50%;
+    bottom: 0.7em;
+    margin-left: 1em;
+    // top: -3px;
+    // right: -33px;
+    width: 25px;
+    height: 12px;
+    z-index: 6;
+  }
+
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media @desktop-width {
+    margin: 0;
+  }
 }
