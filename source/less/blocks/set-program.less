@@ -1,21 +1,27 @@
 .set-program {
-  width: 320px;
+  // width: 320px;
   position: relative;
   box-sizing: border-box;
   text-align: center;
   min-height: 481px;
   margin-bottom: 22px;
-  padding: 29px 20px 0 20px;
+  // padding: 29px 20px 0 20px;
+  padding-top: 29px;
   color: white;
 
   @media @tablet-width {
-    width: 768px;
+    // width: 768px;
     min-height: 845px;
     padding-top: 56px;
-    padding-left: 118px;
+    padding-left: 117px;
   }
 
-  // background-color: white;
+  @media @desktop-width {
+    width: 1300px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
 
   &::before {
     content: url("../img/index-background-mobile@1x.jpg");
@@ -45,7 +51,7 @@
       top: 258px;
       left: 27px;
       content: url("/source/img/index-can-tablet@1x.jpg");
-      width: 709px;
+      // width: 709px;
       height: 609px;
       z-index: -1;
     }

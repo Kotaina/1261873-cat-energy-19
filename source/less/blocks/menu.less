@@ -15,11 +15,6 @@
 
   &:first-child {
     text-align: center;
-
-    @media @tablet-width {
-      padding-bottom: 8px;
-      border-bottom: 2px solid @green;
-    }
   }
 
   a {
@@ -29,6 +24,10 @@
     height: 100%;
     text-decoration: none;
     color: black;
+
+    @media @desktop-width {
+      color: white;
+    }
   }
 
   @media @tablet-width {
@@ -42,6 +41,10 @@
     line-height: 25px;
     font-weight: normal;
   }
+
+  @media @desktop-width {
+    color: white;
+  }
 }
 
 .menu--hide {
@@ -49,5 +52,12 @@
 
   @media @tablet-width {
     padding-top: 12px;
+  }
+}
+
+.active {
+  @media @tablet-width {
+    padding-bottom: 8px;
+    border-bottom: 2px solid @green;
   }
 }
