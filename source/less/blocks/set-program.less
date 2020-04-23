@@ -1,29 +1,41 @@
 .set-program {
   // width: 320px;
   position: relative;
-  box-sizing: border-box;
   text-align: center;
   min-height: 481px;
   margin-bottom: 22px;
   // padding: 29px 20px 0 20px;
-  padding-top: 29px;
   color: white;
 
   @media @tablet-width {
     // width: 768px;
     // width: 100%;
     min-height: 845px;
-    padding-top: 56px;
-    padding-left: 87px;
   }
 
   @media @desktop-width {
     width: 100%;
     min-height: 578px;
-    padding-top: 106px;
-    padding-left: 151px;
     margin-bottom: 80px;
   }
+}
+
+.set-program__container {
+    padding-top: 29px;
+    position: relative;
+
+    @media @tablet-width {
+      padding-top: 56px;
+      padding-left: 87px;
+    }
+
+    @media @desktop-width {
+      padding-top: 106px;
+      padding-left: 151px;
+    }
+
+
+
   // Фон
   &::before {
     content: url("../img/index-background-mobile@1x.jpg");
@@ -43,7 +55,7 @@
       content: url("../img/index-background-desktop@1x.jpg");
       position: absolute;
       top: -117px;
-      left: 718px;
+      left: 653px;
       width: 720px;
       height: 696px;
     }
@@ -100,7 +112,7 @@
 
 .set-program__subtitle {
   margin: 0;
-  margin-bottom: 302px;
+  margin-bottom: 304px;
   font-size: 14px;
   text-transform: uppercase;
 
