@@ -3,6 +3,10 @@
   margin-bottom: 39px;
   box-sizing: border-box;
   // width: 320px;
+
+  @media @tablet-width {
+    margin-bottom: 33px;
+  }
 }
 
 .how-it-works__title {
@@ -29,7 +33,7 @@
     // align-items: flex-end;
     flex-wrap: wrap;
     width: 620px;
-    min-height: 584px;
+    min-height: 567px;
   }
 
   @media @desktop-width {
@@ -59,10 +63,17 @@
     z-index: -1;
   }
 
+  &:nth-child(3),
+  &:nth-child(4) {
+    @media @tablet-width {
+      align-self: flex-end;
+    }
+  }
+
   @media @tablet-width {
     width: 237px;
     height: 230px;
-    padding-top: 111px;
+    padding-top: 108px;
     // margin-bottom: 82px; // Грубо
   }
 

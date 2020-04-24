@@ -1,10 +1,19 @@
 .geo {
+  position: relative; // !!!!!!!!!
   // width: 320px;
   box-sizing: border-box;
   min-height: 476px;
   background-color: white;
+
+  @media @desktop-width {
+    min-height: 400px;
+  }
 }
 
 .geo__map {
   margin-left: -20px;
+
+  @media @tablet-width {
+    min-height: 400px;
+  }
 }
