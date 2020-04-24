@@ -12,8 +12,25 @@
 
 .geo__map {
   margin-left: -20px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 400px;
+
 
   @media @tablet-width {
-    min-height: 400px;
+    margin-left: -30px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    width: 767px;
+    height: 400px;
+  }
+
+  @media @desktop-width {
+    margin-left: -120px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 400px;
   }
 }

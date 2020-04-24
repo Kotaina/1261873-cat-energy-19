@@ -18,8 +18,15 @@
     right: 45%;
 
     @media @tablet-width {
+      top: 53px;
+      right: 130px;
       width: 61px;
       height: 61px;
+    }
+
+    @media @desktop-width {
+      top: 53px;
+      right: 90px;
     }
   }
 
@@ -54,8 +61,8 @@
     font-size: 20px;
     line-height: 20px;
     max-width: 135px;
-    margin-left: 64px;
-    margin-bottom: 28px;
+    margin-left: 58px;
+    margin-bottom: 26px;
   }
 
   @media @desktop-width {
@@ -78,7 +85,7 @@
     font-size: 16px;
     line-height: 16px;
     max-width: 167px;
-    margin-left: 51px;
+    margin-left: 41px;
     margin-bottom: 89px;
   }
 
@@ -88,5 +95,7 @@
 }
 
 .more-card .button {
-  width: 169px;
+  @media @desktop-width {
+    width: 169px;
+  }
 }
