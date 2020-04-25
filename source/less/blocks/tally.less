@@ -5,6 +5,31 @@
   width: 100%;
   // margin-left: -20px;
   // padding-left: 20px;
+
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 708px;
+    min-height: 140px;
+    padding: 25px 38px;
+    border: 1px solid @border-color;
+  }
+
+  @media @desktop-width {
+    width: 895px;
+    min-height: 71px;
+    padding: 16px 0;
+    border: none;
+    border-top: 1px solid @border-color;
+    align-items: center;
+  }
+
+  &:nth-last-child(1) {
+    @media @desktop-width {
+      border-bottom: 1px solid @border-color;
+    }
+  }
 }
 
 .tally__title {
@@ -13,6 +38,18 @@
   font-weight: normal;
   line-height: 1;
   text-transform: uppercase;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 26px;
+  }
+
+  @media @desktop-width {
+    margin: 0;
+    flex-grow: 1;
+  }
 }
 
 .tally__char {
@@ -22,5 +59,25 @@
   font-size: 14px;
   line-height: 1;
   color: @grey;
-  width:280px ;
+  width: 280px;
+
+  @media @tablet-width {
+    width: 223px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media @desktop-width {
+    width: 281px;
+    margin: 0;
+  }
+}
+
+.tally__button {
+  width: 100%;
+
+  @media @desktop-width {
+    width: 245px;
+    margin-left: 43px;
+  }
 }

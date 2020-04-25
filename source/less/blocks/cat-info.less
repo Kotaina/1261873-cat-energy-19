@@ -1,6 +1,15 @@
 .cat-info {
   width: 100%;
   margin-bottom: 23px;
+
+  @media @tablet-width {
+    margin-bottom: 75px;
+  }
+
+  @media @desktop-width {
+    width: 570px;
+    margin-bottom: 0;
+  }
 }
 
 .cat-info li {
@@ -11,11 +20,21 @@
   align-content: center;
   height: 45px;
   margin-bottom: 14px;
+
+  @media @tablet-width {
+    margin-bottom: 27px;
+  }
 }
 
 .cat-info label {
   box-sizing: border-box;
   margin-right: 13px;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 16px;
+  }
 }
 
 .cat-info input {
@@ -26,4 +45,12 @@
   padding: 15px;
   // margin-left: 7px;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+
+  @media @tablet-width {
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    color: @grey;
+  }
 }

@@ -1,7 +1,7 @@
 .product {
   // box-sizing: border-box;
   width: 320px;
-  min-height: 209px;
+  height: 209px;
   padding: 0 20px;
   // padding: 0 20px 15px 20px;
   margin-left: -20px;
@@ -15,15 +15,22 @@
     border: none;
     width: 324px;
     min-height: 431px;
-    background-color: #d9d9d9;
+    background-color: #f2f2f2;
     margin-bottom: 140px;
     // padding-bottom: 30px;
     padding: 0 37px 30px 37px;
   }
 
+  &:nth-child(1) {
+    @media @desktop-width {
+      margin-bottom: 140px;
+    }
+  }
+
   @media @desktop-width {
     width: 245px;
     min-height: 431px;
+    margin-bottom: 0;
   }
 }
 
@@ -51,6 +58,9 @@
   margin: 0;
 }
 
-.product .button {
-  width: 169px;
+.product__button {
+  // width: 169px;
+  @media @desktop-width {
+    width: 169px;
+  }
 }

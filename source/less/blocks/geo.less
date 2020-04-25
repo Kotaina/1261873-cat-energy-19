@@ -1,10 +1,36 @@
 .geo {
+  position: relative; // !!!!!!!!!
   // width: 320px;
   box-sizing: border-box;
   min-height: 476px;
   background-color: white;
+
+  @media @desktop-width {
+    min-height: 400px;
+  }
 }
 
 .geo__map {
   margin-left: -20px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 400px;
+
+
+  @media @tablet-width {
+    margin-left: -30px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    width: 767px;
+    height: 400px;
+  }
+
+  @media @desktop-width {
+    margin-left: -120px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 400px;
+  }
 }

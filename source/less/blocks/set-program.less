@@ -1,30 +1,40 @@
 .set-program {
   // width: 320px;
   position: relative;
-  box-sizing: border-box;
   text-align: center;
   min-height: 481px;
   margin-bottom: 22px;
   // padding: 29px 20px 0 20px;
-  padding-top: 29px;
   color: white;
 
   @media @tablet-width {
     // width: 768px;
     // width: 100%;
     min-height: 845px;
-    padding-top: 56px;
-    padding-left: 87px;
   }
 
   @media @desktop-width {
     width: 100%;
     min-height: 578px;
-    padding-top: 106px;
-    padding-left: 151px;
     margin-bottom: 80px;
   }
-// Фон
+}
+
+.set-program__container {
+  padding-top: 29px;
+  position: relative;
+
+  @media @tablet-width {
+    padding-top: 54px;
+    padding-left: 117px;
+  }
+
+  @media @desktop-width {
+    padding-top: 106px;
+    padding-left: 120px;
+  }
+
+  // Фон
   &::before {
     content: url("../img/index-background-mobile@1x.jpg");
     position: absolute;
@@ -43,12 +53,12 @@
       content: url("../img/index-background-desktop@1x.jpg");
       position: absolute;
       top: -117px;
-      left: 718px;
+      left: 648px;
       width: 720px;
       height: 696px;
     }
   }
-// Банка
+  // Банка
   &::after {
     content: url("../img/index-can-mobile@1x.png");
     position: absolute;
@@ -58,7 +68,7 @@
     height: 270px;
 
     @media @tablet-width {
-      content: url("/source/img/index-can-tablet@1x.jpg");
+      content: url("../img/index-can-tablet@1x.jpg");
       position: absolute;
       top: 258px;
       left: 27px;
@@ -71,7 +81,7 @@
       content: url("../img/index-can-desktop@1x.png");
       position: absolute;
       top: 27px;
-      left: 561px;
+      left: 489px;
       width: 552px;
       height: 499px;
       z-index: -1;
@@ -100,7 +110,7 @@
 
 .set-program__subtitle {
   margin: 0;
-  margin-bottom: 302px;
+  margin-bottom: 304px;
   font-size: 14px;
   text-transform: uppercase;
 
@@ -130,6 +140,6 @@
   }
 
   @media @desktop-width {
-    left: 189px;
+    left: 119px;
   }
 }
