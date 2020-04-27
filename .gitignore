@@ -11,4 +11,5 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 # source/less/general/normalize.less
+normalize.less
 Thumbs.db
