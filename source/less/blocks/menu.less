@@ -26,7 +26,7 @@
     color: black;
 
     @media @desktop-width {
-      color: white;
+      // color: white;
     }
   }
 
@@ -43,7 +43,15 @@
   }
 
   @media @desktop-width {
+    color: black;
+  }
+
+  &--white,
+  &--white a {
+
+    @media @desktop-width {
     color: white;
+    }
   }
 }
 
@@ -56,12 +64,25 @@
 }
 
 .active {
+
+  &--switch {
+    @media @tablet-width {
+    padding-bottom: 8px;
+    border-bottom: 2px solid @green;
+
+    @media @desktop-width {
+      border-bottom: 2px solid white;
+    }
+    }
+  }
+
   @media @tablet-width {
     padding-bottom: 8px;
     border-bottom: 2px solid @green;
   }
 
   @media @desktop-width {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid @green;
+
   }
 }
