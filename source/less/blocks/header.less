@@ -15,15 +15,49 @@
   position: relative;
   top: -4px;
   width: 25px;
-  background-image: url("../img/icon-mobile-menu.svg");
   height: 19px;
+  background-image: url("../img/icon-mobile-menu.svg");
   margin-left: 15px;
   margin-right: 20px;
   margin-top: 11px;
   z-index: 1;
 
+  & .menu--hide {
+    display: none;
+  }
+
   @media @tablet-width {
     display: none;
+  }
+}
+
+.header__link-menu--close {
+  position: relative;
+  top: 0px;
+  left: 4px;
+  width: 19px;
+  height: 19px;
+  // z-index: 5;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background-color: black;
+    width: 2px;
+    height: 19px;
+    // z-index: 5;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
