@@ -9,17 +9,6 @@
     padding-top: 53px;
     background-color: transparent;
   }
-
-  // @media @desktop-width {
-  //   background-image: url("../img/index-background-desktop@1x.jpg");
-  //   // content: url("../img/index-background-desktop@1x.jpg");
-  //   width: 720px;
-  //   height: 696px;
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   z-index: -1;
-  //   }
 }
 
 .header__link-menu {
@@ -41,4 +30,16 @@
 .header__logo {
   padding-top: 11px;
   padding-bottom: 12px;
+  // flex-grow: 1;
+  // min-width: 55%;
+
+  @media (max-width: 768px) {
+    min-width: 55%;
+  }
+}
+
+.header__menu {
+  @media (max-width: 768px) {
+    flex-grow: 1;
+  }
 }
