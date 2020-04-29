@@ -1,7 +1,7 @@
 .geo {
   position: relative; // !!!!!!!!!
   // width: 320px;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   min-height: 476px;
   background-color: white;
 
@@ -11,26 +11,43 @@
 }
 
 .geo__map {
+  position: relative;
   margin-left: -20px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  width: 320px;
-  height: 400px;
+  width: 100vw;
+  // height: 400px;
 
+  &::after {
+    @media @desktop-width {
+      content: "";
+      background-image: url("../img/map-pin.png");
+      background-repeat: no-repeat;
+      display: block;
+      width: 113px;
+      height: 106px;
+      position: absolute;
+      top: 13px;
+      right: 13px;
+    }
+  }
 
   @media @tablet-width {
     margin-left: -30px;
     background-image: url("../img/bg-map-tablet@1x.png");
     background-repeat: no-repeat;
-    width: 767px;
-    height: 400px;
   }
 
   @media @desktop-width {
-    margin-left: -120px;
     background-image: url("../img/bg-map-desktop@1x.png");
     background-repeat: no-repeat;
-    width: 1440px;
-    height: 400px;
+    position: relative;
+    margin-left: -110px;
+  }
+}
+
+.geo__container {
+  @media @desktop-width {
+    position: relative;
   }
 }

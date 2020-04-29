@@ -111,9 +111,14 @@
   .list-reset();
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
   width: 100%;
   list-style: none;
+
+  @media (max-width: 767px) {
+    max-width: 312px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
 
   @media @tablet-width {
     max-width: 366px;

@@ -2,7 +2,9 @@
   margin-left: -20px;
   padding-top: 23px;
   min-height: 66px;
-  width: 320px;
+  // width: 320px;
+  width: auto;
+  flex-grow: 1;
   vertical-align: center;
   text-align: center;
   list-style: none;
@@ -12,6 +14,10 @@
   font-size: 20px;
   letter-spacing: normal;
   border-top: 1px solid @border-color;
+
+  @media (max-width: 767px) {
+    min-width: 320px;
+  }
 
   &:first-child {
     text-align: center;
@@ -26,7 +32,7 @@
     color: black;
 
     @media @desktop-width {
-      color: white;
+      // color: white;
     }
   }
 
@@ -43,7 +49,14 @@
   }
 
   @media @desktop-width {
-    color: white;
+    color: black;
+  }
+
+  &--white,
+  &--white a {
+    @media @desktop-width {
+      color: white;
+    }
   }
 }
 
@@ -56,12 +69,23 @@
 }
 
 .active {
+  &--switch {
+    @media @tablet-width {
+      padding-bottom: 8px;
+      border-bottom: 2px solid @green;
+    }
+
+    @media @desktop-width {
+      border-bottom: 2px solid white;
+    }
+  }
+
   @media @tablet-width {
     padding-bottom: 8px;
     border-bottom: 2px solid @green;
   }
 
   @media @desktop-width {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid @green;
   }
 }
