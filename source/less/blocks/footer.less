@@ -26,34 +26,48 @@
 }
 
 .footer__logo-link {
-  width: 128px;
-  height: 24px;
+  width: auto;
+  height: auto;
 
-  @media (max-width: 767px) {
+  @media @mobile-width {
     margin: 0 auto;
+    text-align: center;
   }
 }
 
 .footer__logo {
   text-align: center;
-  vertical-align: middle;
   // position: relative;
   // left: 27%;
   // margin: 0 auto;
   // padding-top: 29px;
   box-sizing: border-box;
   height: 86px;
+  display: block;
   // border-bottom: 1px solid #d9d9d9;
+
+  @media @mobile-width {
+    margin: 0 auto;
+  }
 
   @media @tablet-width {
     border: none;
     left: 0;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__social {
   border-top: 1px solid @border-color;
-  width: 100%;
+  width: 96%;
 }
 
 .footer__html-academy {
