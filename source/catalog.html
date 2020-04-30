@@ -71,9 +71,9 @@
       <a href="#" class="header__link-menu">
         <span class="visually-hidden">Меню</span>
       </a>
-      <ul class="header__menu menu menu--hide">
+      <ul class="header__menu menu">
         <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-        <li class="menu__item active">Каталог продукции</li>
+        <li class="menu__item menu__item--active">Каталог продукции</li>
         <li class="menu__item"><a href="form.html" class="menu__link">Подбор программы </a></li>
       </ul>
     </div>
@@ -299,21 +299,21 @@
     </div>
   </section>
   <section class="geo">
-    <div class="container">
+    <div class="container geo__container">
       <div class="geo__dealers dealers-info">
         <h2 class="dealers-info__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="dealers-info__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</address>
       </div>
       <div class="geo__map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CKvWfD9r" width="318" height="362"
-          style="position:relative;"></iframe>
       </div>
     </div>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CKvWfD9r" width="318" height="362" class="geo__frame"
+      style="position:relative;"></iframe>
   </section>
   <footer class="footer">
     <div class="container footer__container">
       <a href="#" class="footer__logo-link">
-        <svg class="footer__logo logo" width="128" height="24" alt="footer-logo">
+        <svg class="logo" width="128" height="24" alt="footer-logo">
           <use xlink:href="#footer-logo"></use>
         </svg>
       </a>
