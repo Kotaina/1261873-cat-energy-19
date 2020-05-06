@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   background-color: white;
 
+  @media @tablet-width {
+    padding-top: 11px;
+  }
+
   @media @desktop-width {
     padding-top: 53px;
     background-color: transparent;
@@ -69,7 +73,13 @@
 
   @media @mobile-width {
     min-width: 55%;
+    margin: 0;
   }
+}
+
+.header__logo__top {
+  width: 174px;
+  height: 59px;
 }
 
 .header__menu {
