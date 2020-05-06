@@ -11,6 +11,7 @@
   // justify-content: space-between;
 
   @media @tablet-width {
+    position: relative;
     .list-reset();
     border: none;
     width: 324px;
@@ -19,12 +20,17 @@
     margin-bottom: 140px;
     // padding-bottom: 30px;
     padding: 0 37px 30px 37px;
+    padding-top: 145px;
   }
 
   &:nth-child(1) {
     @media @desktop-width {
       margin-bottom: 140px;
     }
+  }
+
+  &:nth-last-child(2) {
+    margin-bottom: 0;
   }
 
   @media @desktop-width {
@@ -49,6 +55,23 @@
 
   @media @desktop-width {
     padding: 0;
+  }
+}
+
+.product__image {
+  @media @tablet-width {
+    position: absolute;
+    left: 0;
+    top: -11%;
+    width: 100%;
+    height: auto;
+  }
+
+  &--big {
+    @media @tablet-width {
+      position: absolute;
+      top: -19%;
+    }
   }
 }
 
