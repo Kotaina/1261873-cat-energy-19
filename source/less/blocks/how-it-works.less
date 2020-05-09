@@ -49,18 +49,121 @@
   min-height: 60px;
   vertical-align: center;
 
+  &:nth-child(1)::after {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  &:nth-child(2)::after {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  &:nth-child(3)::after {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  &:nth-child(4)::after {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: 100%;
+    }
+  }
+
+
   &:nth-child(1)::before {
-    position: absolute;
-    top: -43px;
-    right: 47px;
-    content: "1";
-    font-size: 281px;
-    line-height: 281px;
-    width: 71px;
-    height: 228px;
-    color: #f2f2f2;
-    // opacity: 0.3;
-    z-index: -1;
+    @media @tablet-width {
+      position: absolute;
+      top: -43px;
+      right: 47px;
+      content: "1";
+      font-size: 281px;
+      line-height: 281px;
+      width: 71px;
+      height: 228px;
+      color: #f2f2f2;
+      // opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  &:nth-child(2)::before {
+    @media @tablet-width {
+      position: absolute;
+      top: -43px;
+      right: 47px;
+      content: "2";
+      font-size: 281px;
+      line-height: 281px;
+      width: 71px;
+      height: 228px;
+      color: #f2f2f2;
+      // opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  &:nth-child(3)::before {
+    @media @tablet-width {
+      position: absolute;
+      top: -43px;
+      right: 47px;
+      content: "3";
+      font-size: 281px;
+      line-height: 281px;
+      width: 71px;
+      height: 228px;
+      color: #f2f2f2;
+      // opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  &:nth-child(4)::before {
+    @media @tablet-width {
+      position: absolute;
+      top: -43px;
+      right: 47px;
+      content: "4";
+      font-size: 281px;
+      line-height: 281px;
+      width: 71px;
+      height: 228px;
+      color: #f2f2f2;
+      // opacity: 0.3;
+      z-index: -1;
+    }
   }
 
   &:nth-child(3),
