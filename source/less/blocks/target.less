@@ -10,6 +10,12 @@
   font-size: 16px;
   line-height: 18px;
 
+  @media @mobile-width {
+    width: 320px;
+    margin-left: -20px;
+    padding-top: 25px;
+  }
+
   @media @tablet-width {
     min-height: 196px;
     padding: 25px 28px;
@@ -26,11 +32,19 @@
 .target li {
   margin-bottom: 25px;
   align-content: center;
+  position: relative;
+}
+
+.target li:last-child {
+  margin-bottom: 0;
 }
 
 .target label {
-  padding-left: 1.2em;
   cursor: pointer;
+
+  @media @mobile-width {
+    padding-left: 2.4em;
+  }
 
   @media @tablet-width {
     font-size: 20px;
@@ -40,12 +54,26 @@
 
 .target input {
   position: absolute;
-  appearance: none;
+  display: none;
 }
 
-.target__radio {
+// .target__radio {
+//   position: absolute;
+//   left: 1em;
+//   width: 1.9em;
+//   height: 1.9em;
+//   background-color: transparent;
+//   // width: 40px;
+//   // height: 40px;
+//   border: solid 1px #cdcdcd;
+//   border-radius: 50%;
+// }
+
+.target__option::before {
+  content: "";
   position: absolute;
-  left: 1em;
+  left: -0.4em;
+  top: -0.4em;
   width: 1.9em;
   height: 1.9em;
   background-color: transparent;
@@ -53,9 +81,10 @@
   // height: 40px;
   border: solid 1px #cdcdcd;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.radio__input:checked + .target__radio::after {
+.radio__input:checked + .target__option::after {
   content: "";
   position: absolute;
   top: 24%;
@@ -64,4 +93,5 @@
   height: 50%;
   border-radius: 50%;
   background-color: @green;
+  z-index: 50000;
 }
