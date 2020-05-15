@@ -42,14 +42,41 @@
 }
 
 .additional__component {
+  position: relative;
+  padding-left: 2.9em;
   margin-bottom: 25px;
+  cursor: pointer;
 
   &:last-child {
     margin-bottom: 38px;
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @border-color;
   }
 
   @media @tablet-width {
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.additional__component input {
+  display: none;
+}
+
+.additional__component input:checked .additional__component::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-tick.svg);
+  width: 22px;
+  height: 17px;
+  top: 13px;
+  left: 13px;
 }
