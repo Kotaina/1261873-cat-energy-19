@@ -84,14 +84,16 @@
   cursor: pointer;
 }
 
-.radio__input:checked + .target__option::after {
+.target__option input:checked + .target__option::after {
   content: "";
+  // display: block;
   position: absolute;
-  top: 24%;
-  left: 22%;
+  // top: 24%;
+  // left: 22%;
+  top: 13px;
+  left: 13px;
   width: 50%;
   height: 50%;
   border-radius: 50%;
   background-color: @green;
-  z-index: 50000;
 }
