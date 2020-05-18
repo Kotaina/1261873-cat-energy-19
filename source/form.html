@@ -70,7 +70,7 @@
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
+          <img class="header__logo__top" srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
         </picture>
       </a>
       <a href="#" class="header__link-menu">
@@ -172,17 +172,18 @@
           </ul>
         </div>
         <button class="user-form__button button" type="submit">Отправить заявку</button>
-        <span class="require">* — Обязательные поля</span>
+        <span class="user-form__require">* — Обязательные поля</span>
       </form>
     </div>
   </section>
   <section class="geo">
     <div class="container geo__container">
       <div class="geo__dealers dealers-info">
-        <h2 class="dealers-info__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="dealers-info__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</address>
+        <h2 class="dealers-info__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+        <address class="dealers-info__address">ул. Большая Конюшенная, д.19/8 <span>Санкт-Петербург</span></address>
       </div>
       <div class="geo__map">
+        <h3 class="visually-hidden">Карта</h3>
       </div>
     </div>
     <iframe src="https://yandex.ru/map-widget/v1/-/CKvWfD9r" width="318" height="362" class="geo__frame"

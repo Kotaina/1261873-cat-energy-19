@@ -6,7 +6,7 @@
   }
 
   @media @desktop-width {
-    margin-bottom: 74px;
+    margin-bottom: 70px;
   }
 }
 
@@ -32,6 +32,10 @@
   // width: 280px;
   background-color: #f2f2f2b4;
 
+  @media @mobile-width {
+    padding-top: 43px;
+  }
+
   @media @tablet-width {
     padding: 76px 62px 62px 52px;
     // width: 708px;
@@ -48,7 +52,7 @@
     &::after {
       content: url("../img/icon-cat-slim.svg");
       position: absolute;
-      top: 23px;
+      top: 34px;
       left: 30px;
       width: 35px;
       height: 49px;
@@ -73,7 +77,7 @@
     &::before {
       content: " ";
       position: absolute;
-      top: 25px;
+      top: 37px;
       left: 21px;
       background-color: #68b738;
       width: 49px;
@@ -99,10 +103,16 @@
   }
 
   &--gain-weight {
+    padding-top: 30px;
+
+    @media @tablet-width {
+      padding-top: 74px;
+    }
+
     &::after {
       content: url("../img/icon-cat-pro.svg");
       position: absolute;
-      top: 35px;
+      top: 34px;
       left: 13px;
       width: 67px;
       height: 28px;
@@ -193,7 +203,7 @@
 
   @media @tablet-width {
     padding: 0;
-    width: 372px;
+    width: 342px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -202,6 +212,7 @@
 
   @media @desktop-width {
     width: 462px;
+    margin-bottom: 30px;
   }
 }
 
@@ -235,6 +246,12 @@
 
     &:active {
       opacity: 0.3;
+    }
+
+    @media @desktop-width {
+      margin-left: 0.4em;
+      bottom: 0.7em;
+      width: 23px;
     }
   }
 

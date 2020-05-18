@@ -74,12 +74,29 @@
   @media @mobile-width {
     min-width: 55%;
     margin: 0;
+    padding-top: 0;
+    padding-bottom: 2px;
   }
 }
 
 .header__logo__top {
   width: 204px;
   height: 77px;
+
+  @media @mobile-width {
+    width: 190px;
+    height: 60px;
+  }
+
+  @media @tablet-width {
+    width: 174px;
+    height: 60px;
+  }
+
+  @media @desktop-width {
+    width: 202px;
+    height: 77px;
+  }
 }
 
 .header__menu {

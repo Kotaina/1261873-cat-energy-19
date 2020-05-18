@@ -38,7 +38,7 @@
 
   @media @desktop-width {
     .list-reset();
-    width: 100%;
+    width: 99%;
     min-height: 243px;
   }
 }
@@ -59,6 +59,10 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/advantage-leaf@2x.png");
       background-size: 100%;
+
+      @media @desktop-width {
+        background-size: 69%;
+      }
     }
   }
 
@@ -72,6 +76,10 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/advantage-powder@2x.png");
       background-size: 100%;
+
+      @media @desktop-width {
+        background-size: 69%;
+      }
     }
   }
 
@@ -85,6 +93,10 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/advantage-dining@2x.png");
       background-size: 100%;
+
+      @media @desktop-width {
+        background-size: 69%;
+      }
     }
   }
 
@@ -98,6 +110,10 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
       background-size: 100%;
+
+      @media @desktop-width {
+        background-size: 69%;
+      }
     }
   }
 
@@ -186,8 +202,7 @@
     top: -3px;
     left: 0;
     background-color: #68b738;
-    width: 60px;
-    height: 60px;
+    background-size: 50px;
 
     @media @tablet-width {
       width: 80px;

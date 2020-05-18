@@ -3,17 +3,19 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  // padding: 31px 25px 28px 19px;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   height: 114px;
-  padding-top: 5px;
-  padding-left: 20px;
+
+  @media @mobile-width {
+    margin: 0;
+    // margin-left: 13px;
+  }
 
   @media @tablet-width {
     min-height: 201px;
     // padding: 0 61px;
-    padding-top: 67px;
-    padding-left: 61px;
+    padding-top: 65px;
+    padding-left: 71px;
     padding-right: 12px;
     align-items: flex-start;
   }
@@ -21,13 +23,15 @@
   @media @desktop-width {
     position: absolute;
     top: 94px;
-    left: 121px;
+    left: 138px;
     width: 570px;
     min-height: 201px;
     background-color: white;
     z-index: 2;
-    border: 1px solid black;
+    // border: 1px solid black;
     padding: 0 75px;
+    padding-top: 65px;
+    padding-right: 88px;
   }
 }
 
@@ -60,6 +64,11 @@
     line-height: 20px;
     max-width: 153px;
     text-align: right;
+  }
+
+  @media @desktop-width {
+    text-align: left;
+    letter-spacing: normal;
   }
 }
 
