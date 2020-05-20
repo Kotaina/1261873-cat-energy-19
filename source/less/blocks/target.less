@@ -19,7 +19,7 @@
   @media @tablet-width {
     min-height: 196px;
     padding: 25px 28px;
-    margin-bottom: 58px;
+    margin-bottom: 44px;
   }
 
   @media @desktop-width {
@@ -49,6 +49,7 @@
   @media @tablet-width {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 2.4em;
   }
 }
 
@@ -56,18 +57,6 @@
   position: absolute;
   display: none;
 }
-
-// .target__radio {
-//   position: absolute;
-//   left: 1em;
-//   width: 1.9em;
-//   height: 1.9em;
-//   background-color: transparent;
-//   // width: 40px;
-//   // height: 40px;
-//   border: solid 1px #cdcdcd;
-//   border-radius: 50%;
-// }
 
 .target__option::before {
   content: "";
@@ -84,14 +73,14 @@
   cursor: pointer;
 }
 
-.radio__input:checked + .target__option::after {
+.target__radio:checked + .target__label::after {
   content: "";
+  display: block;
   position: absolute;
-  top: 24%;
-  left: 22%;
-  width: 50%;
-  height: 50%;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: @green;
-  z-index: 50000;
 }

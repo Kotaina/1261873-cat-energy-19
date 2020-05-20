@@ -5,20 +5,70 @@
   @media @tablet-width {
     margin-bottom: 32px;
   }
+
+  @media @desktop-width {
+    padding-top: 17px;
+  }
 }
 
 .owner__title {
+  position: relative;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   font-size: 24px;
   line-height: 24px;
+  font-weight: normal;
+
 
   @media @tablet-width {
     font-size: 36px;
     line-height: 36px;
-    font-weight: normal;
     margin-bottom: 77px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 200px;
+    width: calc(100vw - 160px);
+    background-color: @green;
+    height: 3px;
+
+    @media @tablet-width {
+      top: 23px;
+      left: 551px;
+      width: calc(100vw - 623px);
+    }
+
+    @media @desktop-width {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 552px;
+      width: calc(100vw - 552px - 111px);
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    height: 3px;
+    text-align: right;
+
+    @media @tablet-width {
+      top: 23px;
+      right: 671px;
+      width: calc(100vw - 738px);
+    }
+
+    @media @desktop-width {
+      top: 22px;
+      right: 1260px;
+      width: calc(100vw - 1352px);
+    }
   }
 }
 

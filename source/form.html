@@ -70,19 +70,22 @@
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
+          <img class="header__logo__top" srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
         </picture>
       </a>
-      <a href="#" class="header__link-menu">
-        <span class="visually-hidden">Меню</span>
-      </a>
-      <ul class="header__menu menu">
-        <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-        <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
-        <li class="menu__item menu__item--active">Подбор программы</li>
-      </ul>
+      <nav class="header__main-nav header__main-nav--opened header__main-nav--no-js">
+        <a href="#" class="header__link-menu">
+          <span class="visually-hidden">Меню</span>
+        </a>
+        <ul class="header__menu menu">
+          <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+          <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
+          <li class="menu__item menu__item--active">Подбор программы</li>
+        </ul>
+      </nav>
     </div>
   </header>
+  <script src="../source/js/script.js"></script>
   <section class="container">
     <div class="user-form__container">
       <h1 class="user-form__title">Подбор программы</h1>
@@ -106,25 +109,16 @@
           </ul>
           <ul class="user-form__target target">
             <li class="target__option target__loose">
-              <label>
-                <input type="radio" name="target" value="loose-weight" class="radio__input" checked />
-                <!-- <span class="target__radio"></span> -->
-                Похудение
-              </label>
+              <input id="loose-weight" type="radio" name="target" value="loose-weight" class="target__radio" checked />
+              <label for="loose-weight" class="target__label">Похудение</label>
             </li>
             <li class="target__option target__gain">
-              <label for="gain-weight">
-                <input id="gain-weight" type="radio" name="target" value="gain-weight" class="radio__input" />
-                <!-- <span class="target__radio"></span> -->
-                Набор массы
-              </label>
+              <input id="gain-weight" type="radio" name="target" value="gain-weight" class="target__radio" />
+              <label for="gain-weight" class="target__label">Набор массы</label>
             </li>
             <li class="target__option target__idk">
-              <label for="idk">
-                <input id="idk" type="radio" name="target" value="idk" class="radio__input" />
-                <!-- <span class="target__radio"></span> -->
-                Не знаю (нужен ваш совет)
-              </label>
+              <input id="idk" type="radio" name="target" value="idk" class="target__radio" />
+              <label for="idk" class="target__label">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </div>
@@ -151,43 +145,36 @@
           <h3 class="additional__title">Дополнительно</h3>
           <ul class="additional__components">
             <li class="additional__component">
-              <label for="sugarfree">
-                <input type="checkbox" id="sugarfree" value="sugarfree">
-                Сахарозаменитель
-              </label>
+              <input type="checkbox" id="sugarfree" value="sugarfree">
+              <label class="additional__one" for="sugarfree">Сахарозаменитель</label>
             </li>
             <li class="additional__component">
-              <label for="water">
-                <input type="checkbox" id="water" value="water">
-                Питьевая вода
-              </label>
+              <input type="checkbox" id="water" value="water">
+              <label class="additional__one" for="water">Питьевая вода</label>
             </li>
             <li class="additional__component">
-              <label for="milk">
-                <input type="checkbox" id="milk" value="milk">
-                Молоко
-              </label>
+              <input type="checkbox" id="milk" value="milk">
+              <label class="additional__one" for="milk">Молоко</label>
             </li>
             <li class="additional__component">
-              <label for="vitamins">
-                <input type="checkbox" id="vitamins" value="vitamins">
-                Витамины
-              </label>
+              <input type="checkbox" id="vitamins" value="vitamins">
+              <label class="additional__one" for="vitamins">Витамины</label>
             </li>
           </ul>
         </div>
         <button class="user-form__button button" type="submit">Отправить заявку</button>
-        <span class="require">* — Обязательные поля</span>
+        <span class="user-form__require">* — Обязательные поля</span>
       </form>
     </div>
   </section>
   <section class="geo">
     <div class="container geo__container">
       <div class="geo__dealers dealers-info">
-        <h2 class="dealers-info__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="dealers-info__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</address>
+        <h2 class="dealers-info__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+        <address class="dealers-info__address">ул. Большая Конюшенная, д.19/8 <span>Санкт-Петербург</span></address>
       </div>
       <div class="geo__map">
+        <h3 class="visually-hidden">Карта</h3>
       </div>
     </div>
     <iframe src="https://yandex.ru/map-widget/v1/-/CKvWfD9r" width="318" height="362" class="geo__frame"
