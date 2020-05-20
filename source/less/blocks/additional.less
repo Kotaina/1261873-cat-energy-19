@@ -116,6 +116,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid @border-color;
+    cursor: pointer;
 
     @media @tablet-width {
       width: 40px;
@@ -138,12 +139,23 @@
   display: none;
 }
 
-.additional__component input:checked .additional__component::after {
+.additional__one {
+  cursor: pointer;
+}
+
+.additional__component input:checked + .additional__one::after {
   content: "";
   position: absolute;
   background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
   width: 22px;
   height: 17px;
-  top: 13px;
-  left: 13px;
+  top: 2px;
+  left: 7px;
+  cursor: pointer;
+
+  @media @tablet-width {
+    top: 6px;
+    left: 8px;
+  }
 }

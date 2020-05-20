@@ -71,18 +71,20 @@
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header__logo__top" srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
         </picture>
-        <!-- <img src="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39"> -->
       </a>
-      <a href="#" class="header__link-menu">
-        <span class="visually-hidden">Меню</span>
-      </a>
-      <ul class="header__menu menu">
-        <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-        <li class="menu__item menu__item--active">Каталог продукции</li>
-        <li class="menu__item"><a href="form.html" class="menu__link">Подбор программы </a></li>
-      </ul>
+      <nav class="header__main-nav header__main-nav--opened header__main-nav--no-js">
+        <a href="#" class="header__link-menu">
+          <span class="visually-hidden">Меню</span>
+        </a>
+        <ul class="header__menu menu">
+          <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+          <li class="menu__item menu__item--active">Каталог продукции</li>
+          <li class="menu__item"><a href="form.html" class="menu__link">Подбор программы </a></li>
+        </ul>
+      </nav>
     </div>
   </header>
+  <script src="../source/js/script.js"></script>
   <section class="catalog">
     <div class="container">
       <h2 class="catalog__title">Каталог продукции</h2>
@@ -100,21 +102,6 @@
             </picture>
             <div class="product__info main-info">
               <h3 class="main-info__title">Cat energy pro 500 г</h3>
-              <!-- <table class="main-info__description table">
-                <tr class="table__v">
-                  <td>Объём</td>
-                  <td>500 г</td>
-                </tr>
-                <tr class="table__taste">
-                  <td>Вкус</td>
-                  <td>Курица</td>
-                </tr>
-                <tr class="table__price">
-                  <td>Цена</td>
-                  <td>700 р.</td>
-                </tr>
-              </table> -->
-
               <ul class="main-info__description table">
                 <li class="table__list table__v">Объём <span>500 г</span></li>
                 <li class="table__list table__taste">Вкус <span>Курица</span></li>
