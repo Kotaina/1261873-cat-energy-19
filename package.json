@@ -45,6 +45,7 @@
   "dependencies": {
     "browserslist": "^4.11.1",
     "caniuse-lite": "^1.0.30001038",
+    "del": "^5.1.0",
     "gulp-rename": "^2.0.0"
   }
 }
