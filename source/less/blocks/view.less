@@ -1,10 +1,17 @@
 .view {
   position: relative;
+
+  @media @mobile-width {
+    margin: 0 auto;
+    max-width: 320px;
+  }
 }
 
 .view__image {
-  margin-left: -15px;
+  margin-left: -20px;
   margin-bottom: 38px;
+  width: 319px;
+  height: auto;
 
   @media @tablet-width {
     position: absolute;
@@ -29,18 +36,31 @@
   font-size: 16px;
   line-height: 20px;
   padding-bottom: 6px;
+  cursor: pointer;
 
   &--left {
+    position: absolute;
+
+    @media @mobile-width {
+      bottom: -18px;
+      left: 43px;
+    }
+
     @media @tablet-width {
-      position: absolute;
       bottom: -86px;
       left: 26%;
     }
   }
 
   &--right {
+    position: absolute;
+
+    @media @mobile-width {
+      bottom: -18px;
+      right: 39px;
+    }
+
     @media @tablet-width {
-      position: absolute;
       bottom: -86px;
       left: 111px;
     }
@@ -50,4 +70,19 @@
     font-size: 20px;
     border-bottom: 1px solid @grey;
   }
+}
+
+
+.view__slider {
+  // display: flex;
+  position: absolute;
+  bottom: -9px;
+  left: 98px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid @border-color;
+  border-radius: 25%;
+  background:
+     linear-gradient(to bottom,#fff 70px,rgba(255,255,255,0) 70px),
+     linear-gradient(to right,#f2f2f2 50%,#eaeaea 50%)
 }

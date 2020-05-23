@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <svg class="svg-inline">
+  <!-- <svg class="svg-inline">
     <symbol viewBox="0 0 22 12" id="icon-vk">
       <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,
       2C0,1.6-0.1,1.2,0.2,0.9s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4c0-0.5,0.5-0.9,0.9-1.1C8.3,0.1,
@@ -59,7 +59,7 @@
       <path class="st0" d="M119.8,15.1l-4.9-14.7h3l3.5,11l3.4-11h3l-4.9,14.7v8h-3V15.1z"></path>
     </symbol>
 
-  </svg>
+  </svg> -->
   <div class="visually-hidden">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-cat-pro" viewBox="0 0 134 56">
@@ -207,26 +207,26 @@
       </symbol>
     </svg>>
   </div>
-  <header class="header">
-    <div class="container">
-      <a class="logo header__logo">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="header__logo-top" srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
-        </picture>
+  <header class="header header__container">
+    <!-- <div class="container"> -->
+    <a class="logo header__logo">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-top" srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
+      </picture>
+    </a>
+    <nav class="header__main-nav header__main-nav--opened header__main-nav--no-js">
+      <a href="#" class="header__link-menu">
+        <span class="visually-hidden">Меню</span>
       </a>
-      <nav class="header__main-nav header__main-nav--opened header__main-nav--no-js">
-        <a href="#" class="header__link-menu">
-          <span class="visually-hidden">Меню</span>
-        </a>
-        <ul class="header__menu menu">
-          <li class="menu__item menu__link menu__link--index menu__item--active">Главная</li>
-          <li class="menu__item"><a href="catalog.html" class="menu__link menu__link--index">Каталог продукции</a></li>
-          <li class="menu__item"><a href="form.html" class="menu__link menu__link--index">Подбор программы </a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="header__menu menu">
+        <li class="menu__item menu__link menu__link--index menu__item--active">Главная</li>
+        <li class="menu__item"><a href="catalog.html" class="menu__link menu__link--index">Каталог продукции</a></li>
+        <li class="menu__item"><a href="form.html" class="menu__link menu__link--index">Подбор программы </a></li>
+      </ul>
+    </nav>
+    <!-- </div> -->
   </header>
   <section class="set-program">
     <div class="container set-program__container">
@@ -278,7 +278,7 @@
     </div>
   </section>
   <section class="case">
-    <div class="container case__container">
+    <div class="case__container">
       <h2 class="case__title">Живой пример</h2>
       <p class="case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
         на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
@@ -303,6 +303,7 @@
           <img class="view__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Cat-fat">
         </picture>
         <span class="view__toggle view__toggle--left">Было</span>
+        <span class="view__slider"></span>
         <span class="view__toggle view__toggle--right">Стало</span>
       </div>
     </div>
@@ -360,6 +361,7 @@
       </div>
     </div>
   </footer>
+  <!-- <script src="../build/js/script.js"></script> -->
   <script src="../source/js/script.js"></script>
 </body>
 

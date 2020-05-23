@@ -1,11 +1,7 @@
 .case {
-  // margin: 0 auto;
-  // box-sizing: border-box;
-  // width: 280px;
   min-height: 705px;
   background-color: #f2f2f2;
   position: relative;
-  // border: 1px solid black;
 
   &::before {
     @media @desktop-width {
@@ -35,6 +31,8 @@
 
 .case__container {
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media @desktop-width {
     display: flex;
@@ -47,7 +45,7 @@
 .case__title {
   margin: 0;
   padding-top: 17px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
@@ -71,7 +69,8 @@
     .list-reset();
     background-color: #eaeaea;
     height: 462px;
-    width: 100vw;
+    // width: 104vw;
+    width: 100%;
     margin-left: -60px; // Не знаю как правильно
     // margin-right: -30px;
   }
@@ -84,7 +83,8 @@
 
 .case__text {
   .list-reset();
-  margin-bottom: 28px;
+  margin-bottom: 26px;
+  margin-right: 1px;
   font-family: @font-arial;
   font-size: 14px;
   line-height: 18px;
@@ -132,7 +132,7 @@
 
 .case__price {
   .list-reset();
-  margin-bottom: 39px;
+  margin-bottom: 34px;
   font-size: 14px;
   line-height: 20px;
   color: black;

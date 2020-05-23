@@ -22,6 +22,10 @@
   letter-spacing: normal;
   border-top: 1px solid @border-color;
 
+  &:last-child {
+    border-bottom: 1px solid @border-color;
+  }
+
   @media @mobile-width {
     min-width: 320px;
   }
@@ -51,7 +55,7 @@
 }
 
 .menu__link {
-  display: inline-block;
+  // display: inline-block;
   vertical-align: center;
   height: 100%;
   text-decoration: none;
