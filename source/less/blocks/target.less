@@ -42,6 +42,10 @@
 .target label {
   cursor: pointer;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media @mobile-width {
     padding-left: 2.4em;
   }
@@ -71,6 +75,15 @@
   border: solid 1px #cdcdcd;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .target__radio:checked + .target__label::after {
