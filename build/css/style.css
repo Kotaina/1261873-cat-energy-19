@@ -394,18 +394,25 @@ body {
     line-height: 20px;
   }
 }
-.button--gray {
-  font-size: 16px;
-  line-height: 20px;
-  background-color: #f2f2f2;
-  color: black;
-}
 .button:hover,
 .button:focus {
   background-color: #5eaa2f;
 }
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+.button--gray {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #f2f2f2;
+  color: black;
+}
+.button--gray:hover,
+.button--gray:focus {
+  background-color: #f2f2f2;
+}
+.button--gray :active {
+  opacity: 0.3;
 }
 .header__container {
   padding: 0 20px;
@@ -423,6 +430,13 @@ body {
             justify-content: space-between;
     padding: 0 30px;
     padding-top: 10px;
+  }
+}
+@media (min-width: 1300px) {
+  .header__container {
+    padding-top: 33px;
+    padding-left: 109px;
+    padding-right: 111px;
   }
 }
 .header__main-nav {
@@ -495,6 +509,13 @@ body {
 .header__logo-top {
   width: 204px;
   height: 77px;
+}
+.header__logo-top:hover,
+.header__logo-top:focus {
+  opacity: 0.8;
+}
+.header__logo-top:active {
+  opacity: 0.6;
 }
 @media (max-width: 767px) {
   .header__logo-top {
@@ -575,6 +596,7 @@ body {
 @media (min-width: 768px) and (min-width: 1300px) {
   .menu__item {
     margin-left: 30px;
+    font-size: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -583,11 +605,26 @@ body {
     border-bottom: 2px solid #68b738;
   }
 }
+@media (min-width: 1300px) {
+  .menu__item--special {
+    padding-bottom: 8px;
+    border-bottom: 2px solid white;
+  }
+}
 .menu__link {
   vertical-align: center;
   height: 100%;
   text-decoration: none;
   color: black;
+}
+@media (min-width: 768px) {
+  .menu__link:hover,
+  .menu__link:focus {
+    opacity: 0.6;
+  }
+  .menu__link:active {
+    opacity: 0.3;
+  }
 }
 @media (min-width: 1300px) {
   .menu__link {
@@ -1364,7 +1401,7 @@ body {
 @media (min-width: 1300px) {
   .card__title {
     margin-left: 162px;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
   }
 }
 .card__text {
@@ -1398,6 +1435,11 @@ body {
     width: 342px;
   }
 }
+@media (min-width: 1300px) {
+  .card__text--gain {
+    width: 445px;
+  }
+}
 .card__link {
   position: relative;
   display: inline-block;
@@ -1426,7 +1468,7 @@ body {
 }
 @media (min-width: 1300px) {
   .card__link::after {
-    margin-left: 0.4em;
+    margin-left: 1.2em;
     bottom: 0.7em;
     width: 23px;
   }
@@ -1464,7 +1506,6 @@ body {
     top: 0;
     width: 100%;
     margin-top: 617px;
-    min-height: 1081px;
     background-color: #f2f2f2;
   }
 }
@@ -1505,6 +1546,7 @@ body {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-left: 110px;
     max-height: 580px;
   }
 }
@@ -1698,11 +1740,16 @@ body {
 }
 .view {
   position: relative;
+  margin: 0 auto;
 }
 @media (max-width: 767px) {
   .view {
-    margin: 0 auto;
     max-width: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .view {
+    max-width: 768px;
   }
 }
 .view__image {
@@ -1715,8 +1762,7 @@ body {
   .view__image {
     position: absolute;
     top: -169px;
-    left: 167px;
-    margin-left: -13%;
+    left: 34px;
     width: 693px;
     height: auto;
   }
@@ -1724,7 +1770,7 @@ body {
 @media (min-width: 1300px) {
   .view__image {
     top: -36px;
-    left: -5px;
+    left: -52px;
     width: 689px;
     height: auto;
     margin-left: 14%;
@@ -1749,7 +1795,13 @@ body {
 @media (min-width: 768px) {
   .view__toggle--left {
     bottom: 66px;
-    left: 128px;
+    left: 68px;
+  }
+}
+@media (min-width: 1300px) {
+  .view__toggle--left {
+    bottom: -86px;
+    left: 135px;
   }
 }
 .view__toggle--right {
@@ -1764,24 +1816,48 @@ body {
 @media (min-width: 768px) {
   .view__toggle--right {
     bottom: 66px;
-    right: 19px;
+    right: 80px;
+  }
+}
+@media (min-width: 1300px) {
+  .view__toggle--right {
+    bottom: -86px;
+    right: 65px;
   }
 }
 @media (min-width: 768px) {
   .view__toggle {
     font-size: 20px;
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
   }
 }
 .view__slider {
   position: absolute;
-  bottom: -9px;
+  bottom: 73px;
   left: 98px;
   width: 84px;
   height: 14px;
   border: 1px solid #d9d9d9;
-  border-radius: 25%;
+  border-radius: 2.5px;
   background: linear-gradient(to bottom, #fff 70px, rgba(255, 255, 255, 0) 70px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+}
+@media (min-width: 768px) {
+  .view__slider {
+    bottom: 79px;
+    left: 139px;
+    width: 428px;
+    height: 6px;
+    background-color: gray;
+    border-radius: 2.5px;
+  }
+}
+@media (min-width: 1300px) {
+  .view__slider {
+    bottom: -74px;
+    left: 206px;
+    width: 428px;
+    height: 6px;
+  }
 }
 .how-it-works {
   margin: 0 auto;
@@ -2011,6 +2087,18 @@ body {
     padding: 0;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .catalog__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1300px) {
+  .catalog__container {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 .catalog__title {
@@ -2415,7 +2503,7 @@ body {
 @media (min-width: 1300px) {
   .also__title {
     margin-left: 0;
-    margin-bottom: 84px;
+    margin-bottom: 81px;
   }
 }
 .also__list {
@@ -2583,7 +2671,7 @@ body {
   .gift {
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     position: absolute;
-    bottom: -1086px;
+    bottom: -1009px;
     right: 110px;
     width: 245px;
     height: 289px;
@@ -2778,6 +2866,20 @@ body {
   margin-left: -20px;
   margin-right: -20px;
 }
+.user-form input {
+  opacity: 0.3;
+}
+.user-form input:hover,
+.user-form input:focus {
+  opacity: 1;
+}
+.user-form input:active {
+  color: black;
+  border: 2px solid black;
+}
+.user-form input:invalid {
+  outline-color: #ff8282;
+}
 .cat-info {
   width: 100%;
   margin-bottom: 23px;
@@ -2842,17 +2944,6 @@ body {
   opacity: 0.5;
   outline-color: black;
 }
-.cat-info input:hover,
-.cat-info input:focus {
-  opacity: 1;
-}
-.cat-info input:active {
-  color: black;
-  border: 2px solid black;
-}
-.cat-info input:invalid {
-  outline-color: #ff8282;
-}
 @media (min-width: 768px) {
   .cat-info input {
     height: 52px;
@@ -2883,7 +2974,7 @@ body {
 @media (min-width: 768px) {
   .target {
     min-height: 196px;
-    padding: 25px 28px;
+    padding: 32px 33px;
     margin-bottom: 44px;
   }
 }
@@ -2899,6 +2990,11 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   position: relative;
+}
+@media (min-width: 768px) {
+  .target li {
+    margin-bottom: 32px;
+  }
 }
 .target li:last-child {
   margin-bottom: 0;
@@ -2918,7 +3014,7 @@ body {
   .target label {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 2.4em;
+    padding-left: 2.7em;
   }
 }
 .target input {
@@ -2944,6 +3040,12 @@ body {
 .target__option::before:active {
   opacity: 0.3;
 }
+@media (min-width: 768px) {
+  .target__option::before {
+    width: 40px;
+    height: 40px;
+  }
+}
 .target__radio:checked + .target__label::after {
   content: "";
   display: block;
@@ -2954,6 +3056,12 @@ body {
   height: 10px;
   border-radius: 50%;
   background-color: #68b738;
+}
+@media (min-width: 768px) {
+  .target__radio:checked + .target__label::after {
+    width: 18px;
+    height: 18px;
+  }
 }
 .owner {
   padding-top: 30px;
@@ -3089,9 +3197,15 @@ body {
 @media (min-width: 768px) {
   .owner__contacts input {
     height: 52px;
+    padding-left: 18px;
     font-size: 20px;
     line-height: 20px;
     color: #444444;
+  }
+}
+@media (min-width: 768px) {
+  .owner__phone input {
+    padding-left: 12px;
   }
 }
 .comment {
@@ -3299,6 +3413,9 @@ body {
     margin-right: 37px;
   }
 }
+.additional__component:active {
+  opacity: 0.3;
+}
 .additional__component ::before {
   content: "";
   position: absolute;
@@ -3306,7 +3423,7 @@ body {
   left: 0;
   width: 30px;
   height: 30px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #cdcdcd;
   cursor: pointer;
 }
 @media (min-width: 768px) {
@@ -3320,6 +3437,10 @@ body {
     width: 40px;
     height: 40px;
   }
+}
+.additional__component ::before:hover,
+.additional__component ::before:focus {
+  border: 1px solid #bababa;
 }
 @media (min-width: 768px) {
   .additional__component {

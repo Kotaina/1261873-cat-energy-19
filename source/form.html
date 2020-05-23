@@ -219,29 +219,29 @@
       </symbol>
     </svg>
   </div>
-  <header class="header">
-    <div class="container">
-      <a class="logo header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="header__logo-top" srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
-        </picture>
+  <header class="header header__container">
+    <!-- <div class="container"> -->
+    <a class="logo header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-top" srcset="img/logo-mobile.svg" alt="Cat-energy-logo" width="191" height="39">
+      </picture>
+    </a>
+    <nav class="header__main-nav header__main-nav--opened header__main-nav--no-js">
+      <a href="#" class="header__link-menu">
+        <span class="visually-hidden">Меню</span>
       </a>
-      <nav class="header__main-nav header__main-nav--opened header__main-nav--no-js">
-        <a href="#" class="header__link-menu">
-          <span class="visually-hidden">Меню</span>
-        </a>
-        <ul class="header__menu menu">
-          <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-          <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
-          <li class="menu__item menu__item--active">Подбор программы</li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="header__menu menu">
+        <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+        <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
+        <li class="menu__item menu__item--active">Подбор программы</li>
+      </ul>
+    </nav>
+    <!-- </div> -->
   </header>
   <section class="container">
-    <div class="user-form__container">
+    <div class="user-form user-form__container">
       <h1 class="user-form__title">Подбор программы</h1>
       <p class="user-form__text">Заполните анкету и мы подберём программу питания для вашего кота</p>
       <form class="user-form__input" action="https://echo.htmlacademy.ru">
@@ -321,7 +321,7 @@
       </form>
     </div>
   </section>
-  <section class="geo">
+  <section class="geo geo--grey">
     <div class="container geo__container">
       <div class="geo__dealers dealers-info">
         <h2 class="dealers-info__title">Приглашаем <br> к сотрудничеству дилеров!</h2>

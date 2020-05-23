@@ -25,6 +25,12 @@
     padding: 0 30px;
     padding-top: 10px;
   }
+
+  @media @desktop-width {
+    padding-top: 33px;
+    padding-left: 109px;
+    padding-right: 111px;
+  }
 }
 
 .header__main-nav {
@@ -109,6 +115,15 @@
 .header__logo-top {
   width: 204px;
   height: 77px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media @mobile-width {
     width: 190px;

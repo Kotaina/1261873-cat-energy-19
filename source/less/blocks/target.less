@@ -18,7 +18,7 @@
 
   @media @tablet-width {
     min-height: 196px;
-    padding: 25px 28px;
+    padding: 32px 33px;
     margin-bottom: 44px;
   }
 
@@ -33,6 +33,10 @@
   margin-bottom: 25px;
   align-content: center;
   position: relative;
+
+  @media @tablet-width {
+    margin-bottom: 32px;
+  }
 }
 
 .target li:last-child {
@@ -53,7 +57,7 @@
   @media @tablet-width {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 2.4em;
+    padding-left: 2.7em;
   }
 }
 
@@ -84,6 +88,12 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media @tablet-width {
+    width: 40px;
+    height: 40px;
+    // margin-bottom: 13px;
+  }
 }
 
 .target__radio:checked + .target__label::after {
@@ -96,4 +106,9 @@
   height: 10px;
   border-radius: 50%;
   background-color: @green;
+
+  @media @tablet-width {
+    width: 18px;
+    height: 18px;
+  }
 }

@@ -45,6 +45,7 @@
 
     @media @desktop-width {
       margin-left: 30px;
+      font-size: 20px;
     }
   }
 
@@ -52,6 +53,13 @@
     @media @tablet-width {
       padding-bottom: 8px;
       border-bottom: 2px solid @green;
+    }
+  }
+
+  &--special {
+    @media @desktop-width {
+      padding-bottom: 8px;
+      border-bottom: 2px solid white;
     }
   }
 }
@@ -62,6 +70,17 @@
   height: 100%;
   text-decoration: none;
   color: black;
+
+  @media @tablet-width {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   @media @desktop-width {
     font-size: 20px;

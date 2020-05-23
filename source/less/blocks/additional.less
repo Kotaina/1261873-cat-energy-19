@@ -107,6 +107,9 @@
     }
   }
 
+  &:active {
+    opacity: 0.3;
+  }
 
   ::before {
     content: "";
@@ -115,7 +118,7 @@
     left: 0;
     width: 30px;
     height: 30px;
-    border: 1px solid @border-color;
+    border: 1px solid #cdcdcd;
     cursor: pointer;
 
     @media @tablet-width {
@@ -126,6 +129,11 @@
     @media @desktop-width {
       width: 40px;
       height: 40px;
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid #bababa;
     }
   }
 
