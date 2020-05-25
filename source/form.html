@@ -213,7 +213,6 @@
         <li class="menu__item menu__item--active">Подбор программы</li>
       </ul>
     </nav>
-    <!-- </div> -->
   </header>
   <section class="container">
     <div class="user-form user-form__container">
@@ -232,22 +231,22 @@
               <input type="number" name="weight " id="weight" placeholder="7" required="">
             </li>
             <li class="cat-info__age">
-              <label for="age">Возраст (лет):* </label>
+              <label for="age">Возраст (лет): </label>
               <input type="number" name="age" id="age" placeholder="7">
             </li>
           </ul>
           <ul class="user-form__target target">
             <li class="target__option target__option--loose">
-              <input id="loose-weight" type="radio" name="target" value="loose-weight" class="target__radio" checked="">
-              <label for="loose-weight" class="target__label">Похудение</label>
+              <input id="loose-weight" type="radio" name="target" value="loose-weight" class="target__radio" checked>
+              <label for="loose-weight" class="target__label" tabindex="0">Похудение</label>
             </li>
             <li class="target__option target__option--gain">
               <input id="gain-weight" type="radio" name="target" value="gain-weight" class="target__radio">
-              <label for="gain-weight" class="target__label">Набор массы</label>
+              <label for="gain-weight" class="target__label" tabindex="0">Набор массы</label>
             </li>
             <li class="target__option target__option--idk">
               <input id="idk" type="radio" name="target" value="idk" class="target__radio">
-              <label for="idk" class="target__label">Не знаю (нужен ваш совет)</label>
+              <label for="idk" class="target__label" tabindex="0">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </div>
@@ -275,19 +274,19 @@
           <ul class="additional__components">
             <li class="additional__component">
               <input type="checkbox" id="sugarfree" value="sugarfree">
-              <label class="additional__one" for="sugarfree">Сахарозаменитель</label>
+              <label class="additional__one" for="sugarfree" tabindex="0">Сахарозаменитель</label>
             </li>
             <li class="additional__component">
               <input type="checkbox" id="water" value="water">
-              <label class="additional__one" for="water">Питьевая вода</label>
+              <label class="additional__one" for="water" tabindex="0">Питьевая вода</label>
             </li>
             <li class="additional__component">
               <input type="checkbox" id="milk" value="milk">
-              <label class="additional__one" for="milk">Молоко</label>
+              <label class="additional__one" for="milk" tabindex="0">Молоко</label>
             </li>
             <li class="additional__component">
               <input type="checkbox" id="vitamins" value="vitamins">
-              <label class="additional__one" for="vitamins">Витамины</label>
+              <label class="additional__one" for="vitamins" tabindex="0">Витамины</label>
             </li>
           </ul>
         </div>
@@ -350,7 +349,7 @@
       </div>
     </div>
   </footer>
-  <script src="../source/js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
