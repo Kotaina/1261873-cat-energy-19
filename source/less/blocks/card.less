@@ -185,7 +185,7 @@
 
   @media @desktop-width {
     margin-left: 162px;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
   }
 }
 
@@ -200,10 +200,9 @@
   font-weight: normal;
   color: #444444;
 
-
   @media @tablet-width {
     padding: 0;
-    width: 342px;
+    width: 372px;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -214,7 +213,18 @@
     width: 462px;
     margin-bottom: 30px;
   }
+
+  &--gain {
+    @media @tablet-width {
+      width: 342px;
+    }
+
+    @media @desktop-width {
+      width: 445px;
+    }
+  }
 }
+
 
 .card__link {
   position: relative;
@@ -249,7 +259,7 @@
     }
 
     @media @desktop-width {
-      margin-left: 0.4em;
+      margin-left: 1.2em;
       bottom: 0.7em;
       width: 23px;
     }
