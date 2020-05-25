@@ -18,21 +18,7 @@
     min-height: 578px;
     margin-bottom: 64px;
   }
-}
 
-.set-program__container {
-  padding-top: 29px;
-  position: relative;
-
-  @media @tablet-width {
-    padding-top: 4px;
-    padding-left: 117px;
-  }
-
-  @media @desktop-width {
-    padding-top: 47px;
-    padding-left: 120px;
-  }
 
   // Фон
   &::before {
@@ -77,6 +63,23 @@
       }
     }
   }
+}
+
+.set-program__container {
+  padding-top: 29px;
+  position: relative;
+
+  @media @tablet-width {
+    padding-top: 4px;
+    padding-left: 117px;
+    overflow: visible;
+  }
+
+  @media @desktop-width {
+    padding-top: 47px;
+    padding-left: 120px;
+  }
+
   // Банка
   &::after {
     content: "";

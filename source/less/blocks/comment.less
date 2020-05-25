@@ -43,7 +43,7 @@
     @media @desktop-width {
       top: 25px;
       left: 218px;
-      width: calc(100vw - 218px - 110px);
+      width: calc(100vw - 218px - 111px);
     }
   }
 
@@ -77,7 +77,22 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
-  border-color: @border-color;
+  // border-color: @border-color;
+  outline-color: black;
+  border-width: 1px;
+  border-color: rgba(205, 205, 205, 0.5);
+  // opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    color: black;
+    border: 2px solid black;
+  }
+
 
   @media @tablet-width {
     width: 632px;
