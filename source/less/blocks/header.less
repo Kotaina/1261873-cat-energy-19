@@ -1,48 +1,41 @@
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: white;
+.header__container {
+  padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @media @tablet-width {
-    padding-top: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    padding-top: 10px;
   }
 
   @media @desktop-width {
-    padding-top: 53px;
-    background-color: transparent;
+    padding-top: 33px;
+    padding-left: 109px;
+    padding-right: 111px;
   }
 }
 
-.header__link-menu {
+.header__main-nav {
   position: relative;
-  // top: -4px;
-  width: 25px;
-  height: 19px;
-  background-image: url("../img/icon-mobile-menu.svg");
-  // margin-left: 15px;
-  margin-right: 10px;
-  // margin-top: 11px;
-  z-index: 1;
-
-  & .menu--hide {
-    display: none;
-  }
-
-  @media @tablet-width {
-    display: none;
-  }
 }
 
-.header__link-menu--close {
-  position: relative;
-  top: 0;
-  left: 4px;
+.header__main-nav--opened .header__link-menu {
+  position: absolute;
+  // top: 0;
+  // left: 4px;
+  top: -43px;
+  right: -5px;
   width: 19px;
   height: 19px;
   // z-index: 5;
   cursor: pointer;
+
+  @media @tablet-width {
+    display: none;
+  }
 
   &::before,
   &::after {
@@ -65,8 +58,33 @@
   }
 }
 
+.header__main-nav--closed .header__link-menu {
+  position: absolute;
+  top: -41px;
+  right: -11px;
+  width: 25px;
+  height: 19px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  // margin-left: 15px;
+  margin-right: 10px;
+  // margin-top: 11px;
+  z-index: 1;
+
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.header__main-nav--closed .menu {
+  display: none;
+}
+
+.header__main-nav--no-js .header__link-menu {
+  display: none;
+}
+
 .header__logo {
-  padding-top: 11px;
+  padding-top: 12px;
   padding-bottom: 12px;
   // flex-grow: 1;
   // min-width: 55%;
@@ -74,12 +92,38 @@
   @media @mobile-width {
     min-width: 55%;
     margin: 0;
+    padding-top: 0;
+    padding-bottom: 2px;
   }
 }
 
-.header__logo__top {
-  width: 174px;
-  height: 59px;
+.header__logo-top {
+  width: 204px;
+  height: 77px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media @mobile-width {
+    width: 190px;
+    height: 62px;
+  }
+
+  @media @tablet-width {
+    width: 174px;
+    height: 60px;
+  }
+
+  @media @desktop-width {
+    width: 202px;
+    height: 77px;
+  }
 }
 
 .header__menu {

@@ -22,6 +22,12 @@
   letter-spacing: normal;
   border-top: 1px solid @border-color;
 
+  &:last-child {
+    @media @mobile-width {
+      border-bottom: 1px solid @border-color;
+    }
+  }
+
   @media @mobile-width {
     min-width: 320px;
   }
@@ -36,6 +42,11 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: normal;
+
+    @media @desktop-width {
+      margin-left: 30px;
+      font-size: 20px;
+    }
   }
 
   &--active {
@@ -44,14 +55,38 @@
       border-bottom: 2px solid @green;
     }
   }
+
+  &--special {
+    @media @desktop-width {
+      padding-bottom: 8px;
+      border-bottom: 2px solid white;
+    }
+  }
 }
 
 .menu__link {
-  display: inline-block;
+  // display: inline-block;
   vertical-align: center;
   height: 100%;
   text-decoration: none;
   color: black;
+
+  @media @tablet-width {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media @desktop-width {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: normal;
+  }
 
   &--index {
     @media @desktop-width {

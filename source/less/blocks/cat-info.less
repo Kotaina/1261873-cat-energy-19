@@ -37,6 +37,11 @@
   }
 }
 
+.cat-info__age label {
+  width: 91px;
+  flex-shrink: 1;
+}
+
 .cat-info input {
   flex-grow: 1;
   box-sizing: border-box;
@@ -44,8 +49,21 @@
   height: 45px;
   padding: 15px;
   // margin-left: 7px;
+  outline-color: black;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border-width: 1px;
+  border-color: rgba(205, 205, 205, 0.5);
+  // opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    color: black;
+    border: 2px solid black;
+  }
 
   @media @tablet-width {
     height: 52px;

@@ -11,7 +11,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 708px;
-    min-height: 140px;
+    min-height: 137px;
     padding: 25px 38px;
     padding-right: 35px;
     padding-bottom: 9px;
@@ -21,7 +21,7 @@
   @media @desktop-width {
     width: 895px;
     min-height: 71px;
-    padding: 16px 0;
+    padding: 10px 0;
     border: none;
     border-top: 1px solid @border-color;
     align-items: center;
@@ -65,8 +65,13 @@
   color: @grey;
   width: 280px;
 
+  &--special {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   @media @tablet-width {
-    width: 223px;
+    width: 229px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -82,7 +87,20 @@
   margin-bottom: 17px;
 
   @media @desktop-width {
+    margin-bottom: 0;
     width: 245px;
     margin-left: 43px;
+  }
+}
+
+.tally__item {
+  min-width: 133px;
+
+  @media @tablet-width {
+    text-align: right;
+  }
+
+  @media @desktop-width {
+    text-align: left;
   }
 }

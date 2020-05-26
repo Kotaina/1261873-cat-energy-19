@@ -1,10 +1,22 @@
-// .catalog {
-//   width: ;
-// }
+.catalog__container {
+  @media @tablet-width {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media @desktop-width {
+    padding-left: 110px;
+    padding-right: 110px;
+    max-width: 1440px;
+    // margin: 0 auto;
+  }
+}
 
 .catalog__title {
   margin: 0;
-  margin-left: -20px;
+  // margin-left: -20px;
   // margin-right: -20px;
   width: 320px;
   padding-top: 15px;
@@ -15,7 +27,7 @@
   font-weight: normal;
   line-height: 1.67;
   letter-spacing: 0.9;
-  border-top: 1px solid @border-color;
+  // border-top: 1px solid @border-color;
 
   @media @tablet-width {
     .list-reset();
@@ -28,7 +40,7 @@
   }
 
   @media @desktop-width {
-    margin-top: 72px;
+    margin-top: 52px;
   }
 }
 
@@ -47,6 +59,6 @@
 
   @media @desktop-width {
     min-height: 1003px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 }

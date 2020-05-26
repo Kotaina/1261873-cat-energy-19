@@ -1,14 +1,117 @@
-.view__image {
-  margin-left: -15px;
-  margin-bottom: 38px;
+.view {
+  position: relative;
+  margin: 0 auto;
+
+  @media @mobile-width {
+    max-width: 280px;
+  }
 
   @media @tablet-width {
-    margin-left: 33%;
+    max-width: 718px;
   }
 }
 
-.view span {
+.view__image {
+  // position: relative;
+  margin-left: -20px;
+  margin-bottom: 38px;
+  width: 319px;
+  height: auto;
+
+  @media @tablet-width {
+    position: absolute;
+    top: -169px;
+    left: 34px;
+    // margin-left: -13%;
+    width: 693px;
+    height: auto;
+  }
+
+  @media @desktop-width {
+    top: -36px;
+    left: -83px;
+    width: 689px;
+    height: auto;
+    margin-left: 14%;
+  }
+}
+
+.view__toggle {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+  padding-bottom: 6px;
+  cursor: pointer;
+
+  &--left {
+    position: absolute;
+
+    @media @mobile-width {
+      bottom: -18px;
+      left: 43px;
+    }
+
+    @media @tablet-width {
+      bottom: 66px;
+      left: 68px;
+    }
+
+    @media @desktop-width {
+      bottom: -86px;
+      left: 135px;
+    }
+  }
+
+  &--right {
+    position: absolute;
+
+    @media @mobile-width {
+      bottom: -18px;
+      right: 39px;
+    }
+
+    @media @tablet-width {
+      bottom: 66px;
+      right: 80px;
+    }
+
+    @media @desktop-width {
+      bottom: -86px;
+      right: 12px;
+    }
+  }
+
+  @media @tablet-width {
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+  }
+}
+
+
+.view__slider {
+  // display: flex;
+  position: absolute;
+  bottom: -9px;
+  left: 98px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid @border-color;
+  border-radius: 2.5px;
+  background: linear-gradient(to bottom, #ffffff 70px, rgba(255, 255, 255, 0) 70px), linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+
+  @media @tablet-width {
+    bottom: 79px;
+    left: 139px;
+    width: 428px;
+    height: 6px;
+    background-color: gray;
+    border-radius: 2.5px;
+  }
+
+  @media @desktop-width {
+    bottom: -74px;
+    left: 206px;
+    width: 428px;
+    height: 6px;
+  }
 }
