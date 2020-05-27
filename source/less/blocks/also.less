@@ -1,5 +1,9 @@
 .also__container {
   padding: 0 20px;
+
+  @media @desktop-width {
+    padding: 0;
+  }
 }
 
 .also {
@@ -10,10 +14,6 @@
   @media @tablet-width {
     .list-reset();
     border: none;
-  }
-
-  @media @desktop-width {
-    margin-bottom: 81px;
   }
 }
 
@@ -34,12 +34,16 @@
       top: 22px;
       // left: -111px;
       // left: -103px;
-      right: 1255px;
+      right: 678px;
       width: 100%;
       // width: 70px;
       background-color: @green;
       height: 3px;
       text-align: right;
+    }
+
+    @media @desktop-width {
+      right: 940px;
     }
   }
 
@@ -59,7 +63,7 @@
     }
 
     @media @desktop-width {
-      width: 100vw;
+      width: 66vw;
     }
   }
 

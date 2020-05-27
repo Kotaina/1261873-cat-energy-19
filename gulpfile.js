@@ -13,6 +13,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var csso = require("gulp-csso");
 
 gulp.task("clean", function () {
   return del("build");
@@ -38,6 +39,8 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
