@@ -62,12 +62,6 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("source/img"));
 })
 
-// gulp.task("html", function () {
-//   return gulp.src("source/*.html")
-//     .pipe(posthtml())
-//     .pipe(gulp.dest("build"));
-// });
-
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
