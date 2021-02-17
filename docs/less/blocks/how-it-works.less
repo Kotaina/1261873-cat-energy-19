@@ -1,0 +1,231 @@
+.how-it-works {
+  margin: 0 auto;
+  margin-bottom: 39px;
+  box-sizing: border-box;
+  // width: 320px;
+
+  @media @tablet-width {
+    margin-bottom: 17px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 35px;
+  }
+}
+
+.how-it-works__title {
+  .list-reset();
+  margin-bottom: 34px;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: normal;
+
+  @media @tablet-width {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 75px;
+  }
+}
+
+.how-it-works__list {
+  list-style: none;
+  padding: 0;
+
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-end;
+    flex-wrap: wrap;
+    width: 620px;
+    min-height: 567px;
+  }
+
+  @media @desktop-width {
+    .list-reset();
+    width: 99%;
+    min-height: 243px;
+  }
+}
+
+.how-it-works__item {
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 60px;
+  vertical-align: center;
+
+  &--description::after {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 100%;
+
+      @media @desktop-width {
+        background-size: 69%;
+      }
+    }
+  }
+
+  &--fastfood::after {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 100%;
+
+      @media @desktop-width {
+        background-size: 69%;
+      }
+    }
+  }
+
+  &--non-regular-food::after {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 100%;
+
+      @media @desktop-width {
+        background-size: 69%;
+      }
+    }
+  }
+
+  &--result::after {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: 100%;
+
+      @media @desktop-width {
+        background-size: 69%;
+      }
+    }
+  }
+
+
+  &--description::before {
+    @media @tablet-width {
+      position: absolute;
+      top: -43px;
+      right: 47px;
+      content: "1";
+      font-size: 281px;
+      line-height: 281px;
+      width: 71px;
+      height: 228px;
+      color: #f2f2f2;
+      // opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  &--fastfood::before {
+    @media @tablet-width {
+      position: absolute;
+      top: -43px;
+      right: 47px;
+      content: "2";
+      font-size: 281px;
+      line-height: 281px;
+      width: 71px;
+      height: 228px;
+      color: #f2f2f2;
+      // opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  &--non-regular-food::before {
+    @media @tablet-width {
+      position: absolute;
+      top: -43px;
+      right: 47px;
+      content: "3";
+      font-size: 281px;
+      line-height: 281px;
+      width: 71px;
+      height: 228px;
+      color: #f2f2f2;
+      // opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  &--result::before {
+    @media @tablet-width {
+      position: absolute;
+      top: -43px;
+      right: 47px;
+      content: "4";
+      font-size: 281px;
+      line-height: 281px;
+      width: 71px;
+      height: 228px;
+      color: #f2f2f2;
+      // opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  &--non-regular-food,
+  &--result {
+    @media @tablet-width {
+      align-self: flex-end;
+    }
+  }
+
+  @media @tablet-width {
+    width: 237px;
+    height: 230px;
+    padding-top: 108px;
+    // margin-bottom: 82px; // Грубо
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background-color: #68b738;
+    background-size: 50px;
+
+    @media @tablet-width {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.how-it-works__text {
+  margin: 0;
+  padding-left: 80px;
+  font-family: @font-arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+
+  @media @tablet-width {
+    .list-reset();
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

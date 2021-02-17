@@ -1,0 +1,33 @@
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 0 10px;
+  height: 78px;
+
+  @media @tablet-width {
+    width: 163px;
+  }
+}
+
+.brand__text {
+  font-family: @font-arial;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  color: #444444;
+}
+
+.brand__image {
+  fill: black;
+
+  &:hover,
+  &:focus {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

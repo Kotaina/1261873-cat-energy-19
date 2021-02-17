@@ -1,0 +1,132 @@
+.owner {
+  padding-top: 30px;
+  padding-bottom: 12px;
+
+  @media @tablet-width {
+    margin-bottom: 32px;
+  }
+
+  @media @desktop-width {
+    padding-top: 17px;
+  }
+}
+
+.owner__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+
+
+  @media @tablet-width {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 77px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 200px;
+    width: calc(100vw - 220px);
+    background-color: @green;
+    height: 3px;
+
+    @media @tablet-width {
+      top: 23px;
+      left: 551px;
+      width: calc(100vw - 623px);
+    }
+
+    @media @desktop-width {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 552px;
+      width: calc(100vw - 552px - 111px);
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    height: 3px;
+    text-align: right;
+
+    @media @tablet-width {
+      top: 23px;
+      right: 671px;
+      width: calc(100vw - 738px);
+    }
+
+    @media @desktop-width {
+      top: 22px;
+      right: 1260px;
+      width: calc(100vw - 1352px);
+    }
+  }
+}
+
+.owner__contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.owner__contacts li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media @tablet-width {
+    margin-bottom: 20px;
+  }
+
+  @media @desktop-width {
+    width: 570px;
+  }
+}
+
+.owner__contacts label {
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 8px;
+  }
+}
+
+.owner__contacts input {
+  box-sizing: border-box;
+  padding: 12px;
+  margin-left: 11px;
+  flex-grow: 1;
+  min-height: 40px;
+  text-transform: uppercase;
+
+  @media @tablet-width {
+    height: 52px;
+    padding-left: 18px;
+    font-size: 20px;
+    line-height: 20px;
+    color: @grey;
+  }
+}
+
+.owner__phone input {
+  @media @tablet-width {
+    padding-left: 12px;
+  }
+}

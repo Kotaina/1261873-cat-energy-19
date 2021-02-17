@@ -1,0 +1,92 @@
+.dealers-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 118px;
+
+  @media @mobile-width {
+    margin: 0;
+    width: 100%;
+  }
+
+  @media @tablet-width {
+    min-height: 201px;
+    // padding: 0 61px;
+    padding-top: 65px;
+    padding-left: 71px;
+    padding-right: 71px;
+    align-items: flex-start;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    top: 94px;
+    left: 111px;
+    width: 570px;
+    min-height: 201px;
+    background-color: white;
+    z-index: 2;
+    padding-top: 65px;
+    padding-bottom: 13px;
+    padding-left: 75px;
+    padding-right: 93px;
+  }
+}
+
+.dealers-info__title {
+  width: 50%;
+  line-height: 20px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0;
+
+  @media @tablet-width {
+    max-width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.dealers-info__address {
+  width: 50%;
+  line-height: 20px;
+  font-family: @font-arial;
+  font-size: 14px;
+  font-style: normal;
+  color: @grey;
+
+  @media @tablet-width {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 153px;
+    text-align: right;
+  }
+
+  @media @desktop-width {
+    text-align: left;
+    letter-spacing: normal;
+  }
+}
+
+.dealers-info span {
+  @media @tablet-width {
+    display: block;
+    margin-top: 19px;
+  }
+}
+
+.dealers-info__map {
+  height: 362px;
+  width: 100%;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  z-index: 6;
+
+  @media @tablet-width {
+    min-height: 400px;
+  }
+}

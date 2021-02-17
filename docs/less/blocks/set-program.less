@@ -1,0 +1,188 @@
+.set-program {
+  // width: 320px;
+  position: relative;
+  text-align: center;
+  min-height: 481px;
+  margin-bottom: 10px;
+  // padding: 29px 20px 0 20px;
+  color: white;
+
+  @media @tablet-width {
+    // width: 768px;
+    // width: 100%;
+    min-height: 845px;
+  }
+
+  @media @desktop-width {
+    width: 100%;
+    min-height: 578px;
+    margin-bottom: 64px;
+  }
+
+
+  // Фон
+  &::before {
+    content: "";
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: #63a73a;
+    background-position: center;
+    background-size: auto;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 305px;
+    z-index: -1;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px 305px;
+    }
+
+    @media @tablet-width {
+      content: none;
+    }
+
+    @media @desktop-width {
+      content: "";
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 720px 696px;
+      background-color: #63a73a;
+      background-position: left;
+      position: absolute;
+      top: -136px;
+      width: 50%;
+      // height: auto;
+      height: 696px;
+      // text-align: start;
+      left: 50%;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.set-program__container {
+  padding-top: 29px;
+  position: relative;
+
+  @media @tablet-width {
+    padding-top: 4px;
+    padding-left: 117px;
+    overflow: visible;
+  }
+
+  @media @desktop-width {
+    padding-top: 47px;
+    padding-left: 120px;
+  }
+
+  // Банка
+  &::after {
+    content: "";
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 35%;
+    left: 6%;
+    width: 280px;
+    height: 270px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-mobile@2x.png");
+    }
+
+    @media @tablet-width {
+      // content: "";
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      position: absolute;
+      top: 245px;
+      left: 27px;
+      width: 709px;
+      height: 609px;
+      z-index: -1;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+      }
+    }
+
+    @media @desktop-width {
+      background-image: url("../img/index-can-desktop@1x.png");
+      position: absolute;
+      top: 5px;
+      left: 489px;
+      width: 552px;
+      height: 499px;
+      z-index: -1;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-can-desktop@2x.png");
+      }
+    }
+  }
+}
+
+.set-program__title {
+  max-width: 474px;
+  // text-transform: uppercase;
+  font-size: 36px;
+  // letter-spacing: 1px;
+  font-weight: normal;
+  line-height: 1;
+
+  @media @mobile-width {
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+
+  @media @tablet-width {
+    // width: 414px;
+    color: black;
+    font-size: 60px;
+    text-align: left;
+    // margin-left: 97px;
+    margin-bottom: 40px;
+  }
+}
+
+.set-program__subtitle {
+  margin: 0;
+  margin-bottom: 304px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @media @tablet-width {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    // margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 46px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 51px;
+  }
+}
+
+.set-program__button {
+  @media @tablet-width {
+    position: absolute;
+    left: 118px;
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 15px;
+  }
+
+  @media @desktop-width {
+    left: 119px;
+  }
+}

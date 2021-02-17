@@ -1,0 +1,98 @@
+.gift {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 280px;
+  height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: #63a73a;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  @media @tablet-width {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-color: #63a73a;
+    width: 708px;
+    height: 200px;
+    margin-bottom: 76px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  @media @desktop-width {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-color: #63a73a;
+    position: relative;
+    top: 116px;
+    left: 39px;
+    width: 245px;
+    height: 289px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+}
+
+.gift__text {
+  position: relative;
+  top: 190px;
+  left: 45px;
+  margin: 0;
+  width: 159px;
+  height: 56px;
+  font-family: @font-arial;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+
+  @media @tablet-width {
+    position: relative;
+    top: 70px;
+    left: 393px;
+    text-align: left;
+    max-width: 159px;
+  }
+
+  @media @desktop-width {
+    position: relative;
+    top: 187px;
+    left: 7px;
+    max-width: 159px;
+    text-align: center;
+  }
+
+  &::after {
+    content: url("../img/icon-gift.svg");
+    width: 56px;
+    height: 61px;
+    position: absolute;
+    bottom: 117px;
+    right: 35%;
+
+    @media @tablet-width {
+      position: absolute;
+      bottom: 1px;
+      left: -333px;
+    }
+
+    @media @desktop-width {
+      position: absolute;
+      bottom: 116px;
+      left: 48px;
+    }
+  }
+}
+
+.more {
+  @media @desktop-width {
+    display: flex;
+  }
+}
